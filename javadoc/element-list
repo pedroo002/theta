@@ -102,6 +102,8 @@ hu.bme.mit.theta.xsts.analysis.initprec
 hu.bme.mit.theta.xsts.cli
 hu.bme.mit.theta.xsts.dsl
 hu.bme.mit.theta.xsts.dsl.gen
+hu.bme.mit.theta.xsts.petrinet
+hu.bme.mit.theta.xsts.petrinet.utils
 hu.bme.mit.theta.xsts.pnml
 hu.bme.mit.theta.xsts.pnml.elements
 hu.bme.mit.theta.xsts.type
