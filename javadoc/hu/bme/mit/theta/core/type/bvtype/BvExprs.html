@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -174,179 +174,191 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="BvLitExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvLitExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Bv(boolean%5B%5D,java.lang.Boolean)">Bv</a></span>&#8203;(boolean[]&nbsp;value,
+  java.lang.Boolean&nbsp;signedness)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BvType(int)">BvType</a></span>&#8203;(int&nbsp;size)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BvType(int,java.lang.Boolean)">BvType</a></span>&#8203;(int&nbsp;size,
+      java.lang.Boolean&nbsp;signedness)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="BvConcatExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvConcatExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Concat(java.lang.Iterable)">Concat</a></span>&#8203;(java.lang.Iterable&lt;? extends <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&gt;&nbsp;ops)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="BvEqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvEqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Eq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Eq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="BvExtractExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvExtractExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Extract(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.inttype.IntLitExpr,hu.bme.mit.theta.core.type.inttype.IntLitExpr)">Extract</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;bitvec,
        <a href="../inttype/IntLitExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLitExpr</a>&nbsp;from,
        <a href="../inttype/IntLitExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLitExpr</a>&nbsp;until)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="BvLogicShiftRightExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvLogicShiftRightExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LogicShiftRight(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">LogicShiftRight</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
                <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="BvMulExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvMulExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Mul(java.lang.Iterable)">Mul</a></span>&#8203;(java.lang.Iterable&lt;? extends <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&gt;&nbsp;ops)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="BvNegExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvNegExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Neg(hu.bme.mit.theta.core.type.Expr)">Neg</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="BvNeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvNeqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Neq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Neq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="BvNotExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvNotExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Not(hu.bme.mit.theta.core.type.Expr)">Not</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="BvOrExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvOrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(java.util.List)">Or</a></span>&#8203;(java.util.List&lt;? extends <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&gt;&nbsp;ops)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="BvPosExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvPosExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Pos(hu.bme.mit.theta.core.type.Expr)">Pos</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="BvRotateLeftExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvRotateLeftExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RotateLeft(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">RotateLeft</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
           <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="BvRotateRightExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvRotateRightExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RotateRight(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">RotateRight</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
            <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="BvSDivExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSDivExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SDiv(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SDiv</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="BvSExtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSExtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SExt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.bvtype.BvType)">SExt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;bitvec,
     <a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&nbsp;extendType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="BvSGeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSGeqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SGeq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SGeq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="BvSGtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSGtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SGt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SGt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="BvShiftLeftExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvShiftLeftExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ShiftLeft(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">ShiftLeft</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
          <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="BvSLeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSLeqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SLeq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SLeq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="BvSLtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSLtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SLt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SLt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="BvSModExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSModExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SMod(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SMod</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="BvSRemExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSRemExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SRem(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">SRem</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="BvSubExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvSubExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Sub(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Sub</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="BvUDivExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvUDivExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UDiv(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">UDiv</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static <a href="BvUGeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvUGeqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UGeq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">UGeq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="BvUGtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvUGtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UGt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">UGt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>static <a href="BvULeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvULeqExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ULeq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">ULeq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static <a href="BvULtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvULtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ULt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">ULt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static <a href="BvURemExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvURemExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#URem(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">URem</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;leftOp,
     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static <a href="BvXorExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvXorExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Xor(java.util.List)">Xor</a></span>&#8203;(java.util.List&lt;? extends <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&gt;&nbsp;ops)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>static <a href="BvZExtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvZExtExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ZExt(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.bvtype.BvType)">ZExt</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&gt;&nbsp;bitvec,
     <a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&nbsp;extendType)</code></th>
@@ -376,6 +388,16 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="BvType(int,java.lang.Boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BvType</h4>
+<pre class="methodSignature">public static&nbsp;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&nbsp;BvType&#8203;(int&nbsp;size,
+                            java.lang.Boolean&nbsp;signedness)</pre>
+</li>
+</ul>
 <a id="BvType(int)">
 <!--   -->
 </a>
@@ -383,6 +405,16 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>BvType</h4>
 <pre class="methodSignature">public static&nbsp;<a href="BvType.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvType</a>&nbsp;BvType&#8203;(int&nbsp;size)</pre>
+</li>
+</ul>
+<a id="Bv(boolean[],java.lang.Boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Bv</h4>
+<pre class="methodSignature">public static&nbsp;<a href="BvLitExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype">BvLitExpr</a>&nbsp;Bv&#8203;(boolean[]&nbsp;value,
+                           java.lang.Boolean&nbsp;signedness)</pre>
 </li>
 </ul>
 <a id="Bv(boolean[])">

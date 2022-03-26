@@ -149,10 +149,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../Prod2State.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2State</a>&lt;<a href="../../expl/ExplState.html" title="class in hu.bme.mit.theta.analysis.expl">ExplState</a>,&#8203;<a href="../../pred/PredState.html" title="class in hu.bme.mit.theta.analysis.pred">PredState</a>&gt;&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createStatesForExpr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing,hu.bme.mit.theta.analysis.prod2.Prod2Prec,hu.bme.mit.theta.core.utils.VarIndexing,java.util.function.Function,int)">createStatesForExpr</a></span>&#8203;(<a href="../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="../../../core/type/booltype/BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;expr,
-                   <a href="../../../core/utils/VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;exprIndexing,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createStatesForExpr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing,hu.bme.mit.theta.analysis.prod2.Prod2Prec,hu.bme.mit.theta.core.utils.indexings.VarIndexing,java.util.function.Function,int)">createStatesForExpr</a></span>&#8203;(<a href="../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="../../../core/type/booltype/BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;expr,
+                   <a href="../../../core/utils/indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;exprIndexing,
                    <a href="../Prod2Prec.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2Prec</a>&lt;<a href="../../expl/ExplPrec.html" title="class in hu.bme.mit.theta.analysis.expl">ExplPrec</a>,&#8203;<a href="../../pred/PredPrec.html" title="class in hu.bme.mit.theta.analysis.pred">PredPrec</a>&gt;&nbsp;prec,
-                   <a href="../../../core/utils/VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;precIndexing,
+                   <a href="../../../core/utils/indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;precIndexing,
                    java.util.function.Function&lt;? super <a href="../../../core/model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>,&#8203;? extends <a href="../../expl/ExplState.html" title="class in hu.bme.mit.theta.analysis.expl">ExplState</a>&gt;&nbsp;valuationToState,
                    int&nbsp;limit)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -174,16 +174,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="createStatesForExpr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing,hu.bme.mit.theta.analysis.prod2.Prod2Prec,hu.bme.mit.theta.core.utils.VarIndexing,java.util.function.Function,int)">
+<a id="createStatesForExpr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing,hu.bme.mit.theta.analysis.prod2.Prod2Prec,hu.bme.mit.theta.core.utils.indexings.VarIndexing,java.util.function.Function,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createStatesForExpr</h4>
 <pre class="methodSignature">java.util.Collection&lt;<a href="../Prod2State.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2State</a>&lt;<a href="../../expl/ExplState.html" title="class in hu.bme.mit.theta.analysis.expl">ExplState</a>,&#8203;<a href="../../pred/PredState.html" title="class in hu.bme.mit.theta.analysis.pred">PredState</a>&gt;&gt;&nbsp;createStatesForExpr&#8203;(<a href="../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="../../../core/type/booltype/BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;expr,
-                                                                                <a href="../../../core/utils/VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;exprIndexing,
+                                                                                <a href="../../../core/utils/indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;exprIndexing,
                                                                                 <a href="../Prod2Prec.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2Prec</a>&lt;<a href="../../expl/ExplPrec.html" title="class in hu.bme.mit.theta.analysis.expl">ExplPrec</a>,&#8203;<a href="../../pred/PredPrec.html" title="class in hu.bme.mit.theta.analysis.pred">PredPrec</a>&gt;&nbsp;prec,
-                                                                                <a href="../../../core/utils/VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;precIndexing,
+                                                                                <a href="../../../core/utils/indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;precIndexing,
                                                                                 java.util.function.Function&lt;? super <a href="../../../core/model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>,&#8203;? extends <a href="../../expl/ExplState.html" title="class in hu.bme.mit.theta.analysis.expl">ExplState</a>&gt;&nbsp;valuationToState,
                                                                                 int&nbsp;limit)</pre>
 </li>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,6 +132,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="../../solver/transformer/SmtLibExprTransformer.html" title="interface in hu.bme.mit.theta.solver.smtlib.solver.transformer">SmtLibExprTransformer</a></code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="../mathsat/MathSATSmtLibExprTransformer.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.mathsat">MathSATSmtLibExprTransformer</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">GenericSmtLibExprTransformer</span>
@@ -415,295 +419,310 @@ implements <a href="../../solver/transformer/SmtLibExprTransformer.html" title="
 </tr>
 <tr id="i47" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpDiv(hu.bme.mit.theta.core.type.fptype.FpDivExpr)">transformFpDiv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpDivExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpDivExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpAssign(hu.bme.mit.theta.core.type.fptype.FpAssignExpr)">transformFpAssign</a></span>&#8203;(<a href="../../../../core/type/fptype/FpAssignExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpAssignExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i48" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpEq(hu.bme.mit.theta.core.type.fptype.FpEqExpr)">transformFpEq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpEqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpEqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpDiv(hu.bme.mit.theta.core.type.fptype.FpDivExpr)">transformFpDiv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpDivExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpDivExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i49" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpFromBv(hu.bme.mit.theta.core.type.fptype.FpFromBvExpr)">transformFpFromBv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpFromBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpFromBvExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpEq(hu.bme.mit.theta.core.type.fptype.FpEqExpr)">transformFpEq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpEqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpEqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i50" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpGeq(hu.bme.mit.theta.core.type.fptype.FpGeqExpr)">transformFpGeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpGeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpGeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpFromBv(hu.bme.mit.theta.core.type.fptype.FpFromBvExpr)">transformFpFromBv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpFromBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpFromBvExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i51" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpGt(hu.bme.mit.theta.core.type.fptype.FpGtExpr)">transformFpGt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpGtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpGtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpGeq(hu.bme.mit.theta.core.type.fptype.FpGeqExpr)">transformFpGeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpGeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpGeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpIsNaN(hu.bme.mit.theta.core.type.fptype.FpIsNanExpr)">transformFpIsNaN</a></span>&#8203;(<a href="../../../../core/type/fptype/FpIsNanExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpIsNanExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpGt(hu.bme.mit.theta.core.type.fptype.FpGtExpr)">transformFpGt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpGtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpGtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i53" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLeq(hu.bme.mit.theta.core.type.fptype.FpLeqExpr)">transformFpLeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpIsInfinite(hu.bme.mit.theta.core.type.fptype.FpIsInfiniteExpr)">transformFpIsInfinite</a></span>&#8203;(<a href="../../../../core/type/fptype/FpIsInfiniteExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpIsInfiniteExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLit(hu.bme.mit.theta.core.type.fptype.FpLitExpr)">transformFpLit</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLitExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLitExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpIsNaN(hu.bme.mit.theta.core.type.fptype.FpIsNanExpr)">transformFpIsNaN</a></span>&#8203;(<a href="../../../../core/type/fptype/FpIsNanExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpIsNanExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i55" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLt(hu.bme.mit.theta.core.type.fptype.FpLtExpr)">transformFpLt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLeq(hu.bme.mit.theta.core.type.fptype.FpLeqExpr)">transformFpLeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i56" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMax(hu.bme.mit.theta.core.type.fptype.FpMaxExpr)">transformFpMax</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMaxExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMaxExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLit(hu.bme.mit.theta.core.type.fptype.FpLitExpr)">transformFpLit</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLitExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLitExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i57" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMin(hu.bme.mit.theta.core.type.fptype.FpMinExpr)">transformFpMin</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMinExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMinExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpLt(hu.bme.mit.theta.core.type.fptype.FpLtExpr)">transformFpLt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpLtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpLtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i58" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMul(hu.bme.mit.theta.core.type.fptype.FpMulExpr)">transformFpMul</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMulExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMulExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMax(hu.bme.mit.theta.core.type.fptype.FpMaxExpr)">transformFpMax</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMaxExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMaxExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i59" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpNeg(hu.bme.mit.theta.core.type.fptype.FpNegExpr)">transformFpNeg</a></span>&#8203;(<a href="../../../../core/type/fptype/FpNegExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpNegExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMin(hu.bme.mit.theta.core.type.fptype.FpMinExpr)">transformFpMin</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMinExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMinExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i60" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpNeq(hu.bme.mit.theta.core.type.fptype.FpNeqExpr)">transformFpNeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpNeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpNeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpMul(hu.bme.mit.theta.core.type.fptype.FpMulExpr)">transformFpMul</a></span>&#8203;(<a href="../../../../core/type/fptype/FpMulExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpMulExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i61" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpPos(hu.bme.mit.theta.core.type.fptype.FpPosExpr)">transformFpPos</a></span>&#8203;(<a href="../../../../core/type/fptype/FpPosExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpPosExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpNeg(hu.bme.mit.theta.core.type.fptype.FpNegExpr)">transformFpNeg</a></span>&#8203;(<a href="../../../../core/type/fptype/FpNegExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpNegExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i62" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpRem(hu.bme.mit.theta.core.type.fptype.FpRemExpr)">transformFpRem</a></span>&#8203;(<a href="../../../../core/type/fptype/FpRemExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpRemExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpNeq(hu.bme.mit.theta.core.type.fptype.FpNeqExpr)">transformFpNeq</a></span>&#8203;(<a href="../../../../core/type/fptype/FpNeqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpNeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i63" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpRoundToIntegral(hu.bme.mit.theta.core.type.fptype.FpRoundToIntegralExpr)">transformFpRoundToIntegral</a></span>&#8203;(<a href="../../../../core/type/fptype/FpRoundToIntegralExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpRoundToIntegralExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpPos(hu.bme.mit.theta.core.type.fptype.FpPosExpr)">transformFpPos</a></span>&#8203;(<a href="../../../../core/type/fptype/FpPosExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpPosExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i64" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpSqrt(hu.bme.mit.theta.core.type.fptype.FpSqrtExpr)">transformFpSqrt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpSqrtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpSqrtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpRem(hu.bme.mit.theta.core.type.fptype.FpRemExpr)">transformFpRem</a></span>&#8203;(<a href="../../../../core/type/fptype/FpRemExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpRemExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i65" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpSub(hu.bme.mit.theta.core.type.fptype.FpSubExpr)">transformFpSub</a></span>&#8203;(<a href="../../../../core/type/fptype/FpSubExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpSubExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpRoundToIntegral(hu.bme.mit.theta.core.type.fptype.FpRoundToIntegralExpr)">transformFpRoundToIntegral</a></span>&#8203;(<a href="../../../../core/type/fptype/FpRoundToIntegralExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpRoundToIntegralExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i66" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpToBv(hu.bme.mit.theta.core.type.fptype.FpToBvExpr)">transformFpToBv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpToBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpToBvExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpSqrt(hu.bme.mit.theta.core.type.fptype.FpSqrtExpr)">transformFpSqrt</a></span>&#8203;(<a href="../../../../core/type/fptype/FpSqrtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpSqrtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i67" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpToFp(hu.bme.mit.theta.core.type.fptype.FpToFpExpr)">transformFpToFp</a></span>&#8203;(<a href="../../../../core/type/fptype/FpToFpExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpToFpExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpSub(hu.bme.mit.theta.core.type.fptype.FpSubExpr)">transformFpSub</a></span>&#8203;(<a href="../../../../core/type/fptype/FpSubExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpSubExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i68" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFuncApp(hu.bme.mit.theta.core.type.functype.FuncAppExpr)">transformFuncApp</a></span>&#8203;(<a href="../../../../core/type/functype/FuncAppExpr.html" title="class in hu.bme.mit.theta.core.type.functype">FuncAppExpr</a>&lt;?,&#8203;?&gt;&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpToBv(hu.bme.mit.theta.core.type.fptype.FpToBvExpr)">transformFpToBv</a></span>&#8203;(<a href="../../../../core/type/fptype/FpToBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpToBvExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i69" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIff(hu.bme.mit.theta.core.type.booltype.IffExpr)">transformIff</a></span>&#8203;(<a href="../../../../core/type/booltype/IffExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">IffExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFpToFp(hu.bme.mit.theta.core.type.fptype.FpToFpExpr)">transformFpToFp</a></span>&#8203;(<a href="../../../../core/type/fptype/FpToFpExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpToFpExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i70" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformImply(hu.bme.mit.theta.core.type.booltype.ImplyExpr)">transformImply</a></span>&#8203;(<a href="../../../../core/type/booltype/ImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ImplyExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformFuncApp(hu.bme.mit.theta.core.type.functype.FuncAppExpr)">transformFuncApp</a></span>&#8203;(<a href="../../../../core/type/functype/FuncAppExpr.html" title="class in hu.bme.mit.theta.core.type.functype">FuncAppExpr</a>&lt;?,&#8203;?&gt;&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i71" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntAdd(hu.bme.mit.theta.core.type.inttype.IntAddExpr)">transformIntAdd</a></span>&#8203;(<a href="../../../../core/type/inttype/IntAddExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntAddExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIff(hu.bme.mit.theta.core.type.booltype.IffExpr)">transformIff</a></span>&#8203;(<a href="../../../../core/type/booltype/IffExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">IffExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i72" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntDiv(hu.bme.mit.theta.core.type.inttype.IntDivExpr)">transformIntDiv</a></span>&#8203;(<a href="../../../../core/type/inttype/IntDivExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntDivExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformImply(hu.bme.mit.theta.core.type.booltype.ImplyExpr)">transformImply</a></span>&#8203;(<a href="../../../../core/type/booltype/ImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ImplyExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i73" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntEq(hu.bme.mit.theta.core.type.inttype.IntEqExpr)">transformIntEq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntEqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntEqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntAdd(hu.bme.mit.theta.core.type.inttype.IntAddExpr)">transformIntAdd</a></span>&#8203;(<a href="../../../../core/type/inttype/IntAddExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntAddExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i74" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntGeq(hu.bme.mit.theta.core.type.inttype.IntGeqExpr)">transformIntGeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntGeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntDiv(hu.bme.mit.theta.core.type.inttype.IntDivExpr)">transformIntDiv</a></span>&#8203;(<a href="../../../../core/type/inttype/IntDivExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntDivExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i75" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntGt(hu.bme.mit.theta.core.type.inttype.IntGtExpr)">transformIntGt</a></span>&#8203;(<a href="../../../../core/type/inttype/IntGtExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntEq(hu.bme.mit.theta.core.type.inttype.IntEqExpr)">transformIntEq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntEqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntEqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i76" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLeq(hu.bme.mit.theta.core.type.inttype.IntLeqExpr)">transformIntLeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntGeq(hu.bme.mit.theta.core.type.inttype.IntGeqExpr)">transformIntGeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntGeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i77" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLit(hu.bme.mit.theta.core.type.inttype.IntLitExpr)">transformIntLit</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLitExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLitExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntGt(hu.bme.mit.theta.core.type.inttype.IntGtExpr)">transformIntGt</a></span>&#8203;(<a href="../../../../core/type/inttype/IntGtExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i78" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLt(hu.bme.mit.theta.core.type.inttype.IntLtExpr)">transformIntLt</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLtExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLeq(hu.bme.mit.theta.core.type.inttype.IntLeqExpr)">transformIntLeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i79" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntMod(hu.bme.mit.theta.core.type.inttype.IntModExpr)">transformIntMod</a></span>&#8203;(<a href="../../../../core/type/inttype/IntModExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntModExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLit(hu.bme.mit.theta.core.type.inttype.IntLitExpr)">transformIntLit</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLitExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLitExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i80" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntMul(hu.bme.mit.theta.core.type.inttype.IntMulExpr)">transformIntMul</a></span>&#8203;(<a href="../../../../core/type/inttype/IntMulExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntMulExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntLt(hu.bme.mit.theta.core.type.inttype.IntLtExpr)">transformIntLt</a></span>&#8203;(<a href="../../../../core/type/inttype/IntLtExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntLtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i81" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntNeg(hu.bme.mit.theta.core.type.inttype.IntNegExpr)">transformIntNeg</a></span>&#8203;(<a href="../../../../core/type/inttype/IntNegExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntNegExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntMod(hu.bme.mit.theta.core.type.inttype.IntModExpr)">transformIntMod</a></span>&#8203;(<a href="../../../../core/type/inttype/IntModExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntModExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i82" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntNeq(hu.bme.mit.theta.core.type.inttype.IntNeqExpr)">transformIntNeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntNeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntNeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntMul(hu.bme.mit.theta.core.type.inttype.IntMulExpr)">transformIntMul</a></span>&#8203;(<a href="../../../../core/type/inttype/IntMulExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntMulExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i83" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntPos(hu.bme.mit.theta.core.type.inttype.IntPosExpr)">transformIntPos</a></span>&#8203;(<a href="../../../../core/type/inttype/IntPosExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntPosExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntNeg(hu.bme.mit.theta.core.type.inttype.IntNegExpr)">transformIntNeg</a></span>&#8203;(<a href="../../../../core/type/inttype/IntNegExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntNegExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i84" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntRem(hu.bme.mit.theta.core.type.inttype.IntRemExpr)">transformIntRem</a></span>&#8203;(<a href="../../../../core/type/inttype/IntRemExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntRemExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntNeq(hu.bme.mit.theta.core.type.inttype.IntNeqExpr)">transformIntNeq</a></span>&#8203;(<a href="../../../../core/type/inttype/IntNeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntNeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i85" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntSub(hu.bme.mit.theta.core.type.inttype.IntSubExpr)">transformIntSub</a></span>&#8203;(<a href="../../../../core/type/inttype/IntSubExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntSubExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntPos(hu.bme.mit.theta.core.type.inttype.IntPosExpr)">transformIntPos</a></span>&#8203;(<a href="../../../../core/type/inttype/IntPosExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntPosExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i86" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntToRat(hu.bme.mit.theta.core.type.inttype.IntToRatExpr)">transformIntToRat</a></span>&#8203;(<a href="../../../../core/type/inttype/IntToRatExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntToRatExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntRem(hu.bme.mit.theta.core.type.inttype.IntRemExpr)">transformIntRem</a></span>&#8203;(<a href="../../../../core/type/inttype/IntRemExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntRemExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i87" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIte(hu.bme.mit.theta.core.type.anytype.IteExpr)">transformIte</a></span>&#8203;(<a href="../../../../core/type/anytype/IteExpr.html" title="class in hu.bme.mit.theta.core.type.anytype">IteExpr</a>&lt;?&gt;&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntSub(hu.bme.mit.theta.core.type.inttype.IntSubExpr)">transformIntSub</a></span>&#8203;(<a href="../../../../core/type/inttype/IntSubExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntSubExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i88" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformNot(hu.bme.mit.theta.core.type.booltype.NotExpr)">transformNot</a></span>&#8203;(<a href="../../../../core/type/booltype/NotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">NotExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIntToRat(hu.bme.mit.theta.core.type.inttype.IntToRatExpr)">transformIntToRat</a></span>&#8203;(<a href="../../../../core/type/inttype/IntToRatExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntToRatExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i89" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformOr(hu.bme.mit.theta.core.type.booltype.OrExpr)">transformOr</a></span>&#8203;(<a href="../../../../core/type/booltype/OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformIte(hu.bme.mit.theta.core.type.anytype.IteExpr)">transformIte</a></span>&#8203;(<a href="../../../../core/type/anytype/IteExpr.html" title="class in hu.bme.mit.theta.core.type.anytype">IteExpr</a>&lt;?&gt;&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i90" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatAdd(hu.bme.mit.theta.core.type.rattype.RatAddExpr)">transformRatAdd</a></span>&#8203;(<a href="../../../../core/type/rattype/RatAddExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatAddExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformNot(hu.bme.mit.theta.core.type.booltype.NotExpr)">transformNot</a></span>&#8203;(<a href="../../../../core/type/booltype/NotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">NotExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i91" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatDiv(hu.bme.mit.theta.core.type.rattype.RatDivExpr)">transformRatDiv</a></span>&#8203;(<a href="../../../../core/type/rattype/RatDivExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatDivExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformOr(hu.bme.mit.theta.core.type.booltype.OrExpr)">transformOr</a></span>&#8203;(<a href="../../../../core/type/booltype/OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i92" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatEq(hu.bme.mit.theta.core.type.rattype.RatEqExpr)">transformRatEq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatEqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatEqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatAdd(hu.bme.mit.theta.core.type.rattype.RatAddExpr)">transformRatAdd</a></span>&#8203;(<a href="../../../../core/type/rattype/RatAddExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatAddExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i93" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatGeq(hu.bme.mit.theta.core.type.rattype.RatGeqExpr)">transformRatGeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatGeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatGeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatDiv(hu.bme.mit.theta.core.type.rattype.RatDivExpr)">transformRatDiv</a></span>&#8203;(<a href="../../../../core/type/rattype/RatDivExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatDivExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i94" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatGt(hu.bme.mit.theta.core.type.rattype.RatGtExpr)">transformRatGt</a></span>&#8203;(<a href="../../../../core/type/rattype/RatGtExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatGtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatEq(hu.bme.mit.theta.core.type.rattype.RatEqExpr)">transformRatEq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatEqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatEqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i95" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLeq(hu.bme.mit.theta.core.type.rattype.RatLeqExpr)">transformRatLeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatGeq(hu.bme.mit.theta.core.type.rattype.RatGeqExpr)">transformRatGeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatGeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatGeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i96" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLit(hu.bme.mit.theta.core.type.rattype.RatLitExpr)">transformRatLit</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLitExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLitExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatGt(hu.bme.mit.theta.core.type.rattype.RatGtExpr)">transformRatGt</a></span>&#8203;(<a href="../../../../core/type/rattype/RatGtExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatGtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i97" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLt(hu.bme.mit.theta.core.type.rattype.RatLtExpr)">transformRatLt</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLtExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLtExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLeq(hu.bme.mit.theta.core.type.rattype.RatLeqExpr)">transformRatLeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i98" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatMul(hu.bme.mit.theta.core.type.rattype.RatMulExpr)">transformRatMul</a></span>&#8203;(<a href="../../../../core/type/rattype/RatMulExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatMulExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLit(hu.bme.mit.theta.core.type.rattype.RatLitExpr)">transformRatLit</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLitExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLitExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i99" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatNeg(hu.bme.mit.theta.core.type.rattype.RatNegExpr)">transformRatNeg</a></span>&#8203;(<a href="../../../../core/type/rattype/RatNegExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatNegExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatLt(hu.bme.mit.theta.core.type.rattype.RatLtExpr)">transformRatLt</a></span>&#8203;(<a href="../../../../core/type/rattype/RatLtExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLtExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i100" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatNeq(hu.bme.mit.theta.core.type.rattype.RatNeqExpr)">transformRatNeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatNeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatNeqExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatMul(hu.bme.mit.theta.core.type.rattype.RatMulExpr)">transformRatMul</a></span>&#8203;(<a href="../../../../core/type/rattype/RatMulExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatMulExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i101" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatPos(hu.bme.mit.theta.core.type.rattype.RatPosExpr)">transformRatPos</a></span>&#8203;(<a href="../../../../core/type/rattype/RatPosExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatPosExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatNeg(hu.bme.mit.theta.core.type.rattype.RatNegExpr)">transformRatNeg</a></span>&#8203;(<a href="../../../../core/type/rattype/RatNegExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatNegExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i102" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatSub(hu.bme.mit.theta.core.type.rattype.RatSubExpr)">transformRatSub</a></span>&#8203;(<a href="../../../../core/type/rattype/RatSubExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatSubExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatNeq(hu.bme.mit.theta.core.type.rattype.RatNeqExpr)">transformRatNeq</a></span>&#8203;(<a href="../../../../core/type/rattype/RatNeqExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatNeqExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i103" class="rowColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRef(hu.bme.mit.theta.core.type.anytype.RefExpr)">transformRef</a></span>&#8203;(<a href="../../../../core/type/anytype/RefExpr.html" title="class in hu.bme.mit.theta.core.type.anytype">RefExpr</a>&lt;?&gt;&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatPos(hu.bme.mit.theta.core.type.rattype.RatPosExpr)">transformRatPos</a></span>&#8203;(<a href="../../../../core/type/rattype/RatPosExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatPosExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i104" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformTrue(hu.bme.mit.theta.core.type.booltype.TrueExpr)">transformTrue</a></span>&#8203;(<a href="../../../../core/type/booltype/TrueExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">TrueExpr</a>&nbsp;expr)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatSub(hu.bme.mit.theta.core.type.rattype.RatSubExpr)">transformRatSub</a></span>&#8203;(<a href="../../../../core/type/rattype/RatSubExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatSubExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i105" class="rowColor">
+<td class="colFirst"><code>protected java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRatToInt(hu.bme.mit.theta.core.type.rattype.RatToIntExpr)">transformRatToInt</a></span>&#8203;(<a href="../../../../core/type/rattype/RatToIntExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatToIntExpr</a>&nbsp;expr)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i106" class="altColor">
+<td class="colFirst"><code>protected java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformRef(hu.bme.mit.theta.core.type.anytype.RefExpr)">transformRef</a></span>&#8203;(<a href="../../../../core/type/anytype/RefExpr.html" title="class in hu.bme.mit.theta.core.type.anytype">RefExpr</a>&lt;?&gt;&nbsp;expr)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i107" class="rowColor">
+<td class="colFirst"><code>protected java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformTrue(hu.bme.mit.theta.core.type.booltype.TrueExpr)">transformTrue</a></span>&#8203;(<a href="../../../../core/type/booltype/TrueExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">TrueExpr</a>&nbsp;expr)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i108" class="altColor">
 <td class="colFirst"><code>protected java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformXor(hu.bme.mit.theta.core.type.booltype.XorExpr)">transformXor</a></span>&#8203;(<a href="../../../../core/type/booltype/XorExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">XorExpr</a>&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -987,6 +1006,15 @@ implements <a href="../../solver/transformer/SmtLibExprTransformer.html" title="
 <li class="blockList">
 <h4>transformRatLt</h4>
 <pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformRatLt&#8203;(<a href="../../../../core/type/rattype/RatLtExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatLtExpr</a>&nbsp;expr)</pre>
+</li>
+</ul>
+<a id="transformRatToInt(hu.bme.mit.theta.core.type.rattype.RatToIntExpr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transformRatToInt</h4>
+<pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformRatToInt&#8203;(<a href="../../../../core/type/rattype/RatToIntExpr.html" title="class in hu.bme.mit.theta.core.type.rattype">RatToIntExpr</a>&nbsp;expr)</pre>
 </li>
 </ul>
 <a id="transformIntLit(hu.bme.mit.theta.core.type.inttype.IntLitExpr)">
@@ -1511,6 +1539,15 @@ implements <a href="../../solver/transformer/SmtLibExprTransformer.html" title="
 <pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformFpEq&#8203;(<a href="../../../../core/type/fptype/FpEqExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpEqExpr</a>&nbsp;expr)</pre>
 </li>
 </ul>
+<a id="transformFpAssign(hu.bme.mit.theta.core.type.fptype.FpAssignExpr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transformFpAssign</h4>
+<pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformFpAssign&#8203;(<a href="../../../../core/type/fptype/FpAssignExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpAssignExpr</a>&nbsp;expr)</pre>
+</li>
+</ul>
 <a id="transformFpNeq(hu.bme.mit.theta.core.type.fptype.FpNeqExpr)">
 <!--   -->
 </a>
@@ -1617,6 +1654,15 @@ implements <a href="../../solver/transformer/SmtLibExprTransformer.html" title="
 <li class="blockList">
 <h4>transformFpIsNaN</h4>
 <pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformFpIsNaN&#8203;(<a href="../../../../core/type/fptype/FpIsNanExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpIsNanExpr</a>&nbsp;expr)</pre>
+</li>
+</ul>
+<a id="transformFpIsInfinite(hu.bme.mit.theta.core.type.fptype.FpIsInfiniteExpr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transformFpIsInfinite</h4>
+<pre class="methodSignature">protected&nbsp;java.lang.String&nbsp;transformFpIsInfinite&#8203;(<a href="../../../../core/type/fptype/FpIsInfiniteExpr.html" title="class in hu.bme.mit.theta.core.type.fptype">FpIsInfiniteExpr</a>&nbsp;expr)</pre>
 </li>
 </ul>
 <a id="transformFpFromBv(hu.bme.mit.theta.core.type.fptype.FpFromBvExpr)">

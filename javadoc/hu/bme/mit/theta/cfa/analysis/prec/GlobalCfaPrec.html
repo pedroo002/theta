@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -184,16 +184,21 @@ implements <a href="../CfaPrec.html" title="interface in hu.bme.mit.theta.cfa.an
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUsedVars()">getUsedVars</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="GlobalCfaPrec.html" title="class in hu.bme.mit.theta.cfa.analysis.prec">GlobalCfaPrec</a>&lt;<a href="GlobalCfaPrec.html" title="type parameter in GlobalCfaPrec">P</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#refine(P)">refine</a></span>&#8203;(<a href="GlobalCfaPrec.html" title="type parameter in GlobalCfaPrec">P</a>&nbsp;refinedPrec)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -295,13 +300,26 @@ implements <a href="../CfaPrec.html" title="interface in hu.bme.mit.theta.cfa.an
 <a id="hashCode()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getUsedVars()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getUsedVars</h4>
+<pre class="methodSignature">public&nbsp;java.util.Collection&lt;<a href="../../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;&nbsp;getUsedVars()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../analysis/Prec.html#getUsedVars()">getUsedVars</a></code>&nbsp;in interface&nbsp;<code><a href="../../../analysis/Prec.html" title="interface in hu.bme.mit.theta.analysis">Prec</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -192,13 +192,27 @@ extends <a href="../generic/GenericSmtLibSolverFactory.html" title="class in hu.
 <div class="block">Create a solver that is capable of interpolation.</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../Solver.html" title="interface in hu.bme.mit.theta.solver">Solver</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createSolver()">createSolver</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Create a basic solver instance.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../UCSolver.html" title="interface in hu.bme.mit.theta.solver">UCSolver</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createUCSolver()">createUCSolver</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Create a solver that is capable of producing unsat cores.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.hu.bme.mit.theta.solver.smtlib.impl.generic.GenericSmtLibSolverFactory">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;hu.bme.mit.theta.solver.smtlib.impl.generic.<a href="../generic/GenericSmtLibSolverFactory.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.generic">GenericSmtLibSolverFactory</a></h3>
-<code><a href="../generic/GenericSmtLibSolverFactory.html#create(java.nio.file.Path,java.lang.String%5B%5D)">create</a>, <a href="../generic/GenericSmtLibSolverFactory.html#createSolver()">createSolver</a>, <a href="../generic/GenericSmtLibSolverFactory.html#createUCSolver()">createUCSolver</a></code></li>
+<code><a href="../generic/GenericSmtLibSolverFactory.html#create(java.nio.file.Path,java.lang.String%5B%5D)">create</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -232,6 +246,44 @@ extends <a href="../generic/GenericSmtLibSolverFactory.html" title="class in hu.
 <pre class="methodSignature">public static&nbsp;<a href="MathSATSmtLibSolverFactory.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.mathsat">MathSATSmtLibSolverFactory</a>&nbsp;create&#8203;(java.nio.file.Path&nbsp;solverPath,
                                                 java.lang.String[]&nbsp;args,
                                                 boolean&nbsp;itpSupported)</pre>
+</li>
+</ul>
+<a id="createSolver()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createSolver</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../Solver.html" title="interface in hu.bme.mit.theta.solver">Solver</a>&nbsp;createSolver()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../SolverFactory.html#createSolver()">SolverFactory</a></code></span></div>
+<div class="block">Create a basic solver instance.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../SolverFactory.html#createSolver()">createSolver</a></code>&nbsp;in interface&nbsp;<code><a href="../../../SolverFactory.html" title="interface in hu.bme.mit.theta.solver">SolverFactory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../generic/GenericSmtLibSolverFactory.html#createSolver()">createSolver</a></code>&nbsp;in class&nbsp;<code><a href="../generic/GenericSmtLibSolverFactory.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.generic">GenericSmtLibSolverFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Solver instance</dd>
+</dl>
+</li>
+</ul>
+<a id="createUCSolver()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createUCSolver</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../UCSolver.html" title="interface in hu.bme.mit.theta.solver">UCSolver</a>&nbsp;createUCSolver()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../SolverFactory.html#createUCSolver()">SolverFactory</a></code></span></div>
+<div class="block">Create a solver that is capable of producing unsat cores.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../SolverFactory.html#createUCSolver()">createUCSolver</a></code>&nbsp;in interface&nbsp;<code><a href="../../../SolverFactory.html" title="interface in hu.bme.mit.theta.solver">SolverFactory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../generic/GenericSmtLibSolverFactory.html#createUCSolver()">createUCSolver</a></code>&nbsp;in class&nbsp;<code><a href="../generic/GenericSmtLibSolverFactory.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.generic">GenericSmtLibSolverFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Solver instance</dd>
+</dl>
 </li>
 </ul>
 <a id="createItpSolver()">

@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -83,13 +89,13 @@ loadScripts(document, 'script');</script>
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -109,24 +115,54 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <main role="main">
 <div class="header">
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">hu.bme.mit.theta.solver.smtlib.solver.parser</a></div>
-<h2 title="Interface SpecificResponse" class="title">Interface SpecificResponse</h2>
+<h2 title="Class SpecificResponse" class="title">Class SpecificResponse</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>hu.bme.mit.theta.solver.smtlib.solver.parser.SpecificResponse</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
+<dt>Direct Known Subclasses:</dt>
 <dd><code><a href="CheckSatResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">CheckSatResponse</a></code>, <code><a href="GetModelResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetModelResponse</a></code>, <code><a href="GetUnsatCoreResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetUnsatCoreResponse</a></code></dd>
 </dl>
 <hr>
-<pre>public interface <span class="typeNameLabel">SpecificResponse</span></pre>
+<pre>public abstract class <span class="typeNameLabel">SpecificResponse</span>
+extends java.lang.Object</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Constructor</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">SpecificResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
 <!-- ========== METHOD SUMMARY =========== -->
 <section role="region">
 <ul class="blockList">
@@ -135,18 +171,50 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span>Static Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="SpecificResponse.html" title="interface in hu.bme.mit.theta.solver.smtlib.solver.parser">SpecificResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromContext(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Specific_success_responseContext)">fromContext</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Specific_success_responseContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Specific_success_responseContext</a>&nbsp;ctx)</code></th>
+<td class="colFirst"><code><a href="CheckSatResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">CheckSatResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asCheckSatResponse()">asCheckSatResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="GetModelResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetModelResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asGetModelResponse()">asGetModelResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="GetUnsatCoreResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetUnsatCoreResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#asGetUnsatCoreResponse()">asGetUnsatCoreResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isCheckSatResponse()">isCheckSatResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGetModelResponse()">isGetModelResponse</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isGetUnsatCoreResponse()">isGetUnsatCoreResponse</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -156,6 +224,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a id="&lt;init&gt;()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SpecificResponse</h4>
+<pre>public&nbsp;SpecificResponse()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ============ METHOD DETAIL ========== -->
 <section role="region">
 <ul class="blockList">
@@ -163,13 +250,58 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="fromContext(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Specific_success_responseContext)">
+<a id="isCheckSatResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isCheckSatResponse</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isCheckSatResponse()</pre>
+</li>
+</ul>
+<a id="isGetUnsatCoreResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isGetUnsatCoreResponse</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isGetUnsatCoreResponse()</pre>
+</li>
+</ul>
+<a id="isGetModelResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isGetModelResponse</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isGetModelResponse()</pre>
+</li>
+</ul>
+<a id="asCheckSatResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asCheckSatResponse</h4>
+<pre class="methodSignature">public&nbsp;<a href="CheckSatResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">CheckSatResponse</a>&nbsp;asCheckSatResponse()</pre>
+</li>
+</ul>
+<a id="asGetUnsatCoreResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asGetUnsatCoreResponse</h4>
+<pre class="methodSignature">public&nbsp;<a href="GetUnsatCoreResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetUnsatCoreResponse</a>&nbsp;asGetUnsatCoreResponse()</pre>
+</li>
+</ul>
+<a id="asGetModelResponse()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>fromContext</h4>
-<pre class="methodSignature">static&nbsp;<a href="SpecificResponse.html" title="interface in hu.bme.mit.theta.solver.smtlib.solver.parser">SpecificResponse</a>&nbsp;fromContext&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Specific_success_responseContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Specific_success_responseContext</a>&nbsp;ctx)</pre>
+<h4>asGetModelResponse</h4>
+<pre class="methodSignature">public&nbsp;<a href="GetModelResponse.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.parser">GetModelResponse</a>&nbsp;asGetModelResponse()</pre>
 </li>
 </ul>
 </li>
@@ -225,13 +357,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

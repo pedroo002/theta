@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -207,14 +207,14 @@ implements <a href="../../solver/transformer/SmtLibTermTransformer.html" title="
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected &lt;T extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#popParams(java.util.List,com.google.common.collect.BiMap)">popParams</a></span>&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;T&gt;&gt;&nbsp;paramDecls,
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#popParams(java.util.List,com.google.common.collect.BiMap)">popParams</a></span>&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;? extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&gt;&nbsp;paramDecls,
          com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected &lt;T extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;<br>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pushParams(java.util.List,com.google.common.collect.BiMap)">pushParams</a></span>&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;T&gt;&gt;&nbsp;paramDecls,
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pushParams(java.util.List,com.google.common.collect.BiMap)">pushParams</a></span>&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;? extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&gt;&nbsp;paramDecls,
           com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -311,38 +311,45 @@ implements <a href="../../solver/transformer/SmtLibTermTransformer.html" title="
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformNumeral(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.NumeralContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformNumeral</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.NumeralContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.NumeralContext</a>&nbsp;ctx,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformLetTerm(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Let_termContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformLetTerm</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Let_termContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Let_termContext</a>&nbsp;ctx,
                 <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
                 com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformNumeral(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.NumeralContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformNumeral</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.NumeralContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.NumeralContext</a>&nbsp;ctx,
+                <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
+                com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformQualIdentifier(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Qual_identifierContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformQualIdentifier</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Qual_identifierContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Qual_identifierContext</a>&nbsp;ctx,
                        <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
                        com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformSort(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.SortContext)">transformSort</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.SortContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.SortContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformSpecConstant(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Spec_constantContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformSpecConstant</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Spec_constantContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Spec_constantContext</a>&nbsp;ctx,
                      <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
                      com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformSymbol(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.SymbolContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformSymbol</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.SymbolContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.SymbolContext</a>&nbsp;ctx,
                <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
                com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformTerm(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.TermContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">transformTerm</a></span>&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.TermContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.TermContext</a>&nbsp;ctx,
              <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
@@ -554,6 +561,17 @@ implements <a href="../../solver/transformer/SmtLibTermTransformer.html" title="
                                        com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
 </li>
 </ul>
+<a id="transformLetTerm(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Let_termContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transformLetTerm</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../../../../core/type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;&nbsp;transformLetTerm&#8203;(<a href="../../dsl/gen/SMTLIBv2Parser.Let_termContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Parser.Let_termContext</a>&nbsp;ctx,
+                                   <a href="../../solver/model/SmtLibModel.html" title="class in hu.bme.mit.theta.solver.smtlib.solver.model">SmtLibModel</a>&nbsp;model,
+                                   com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
+</li>
+</ul>
 <a id="transformForallTerm(hu.bme.mit.theta.solver.smtlib.dsl.gen.SMTLIBv2Parser.Forall_termContext,hu.bme.mit.theta.solver.smtlib.solver.model.SmtLibModel,com.google.common.collect.BiMap)">
 <!--   -->
 </a>
@@ -657,8 +675,8 @@ implements <a href="../../solver/transformer/SmtLibTermTransformer.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>pushParams</h4>
-<pre class="methodSignature">protected&nbsp;&lt;T extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&nbsp;void&nbsp;pushParams&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;T&gt;&gt;&nbsp;paramDecls,
-                                           com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;pushParams&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;? extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&gt;&nbsp;paramDecls,
+                          com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
 </li>
 </ul>
 <a id="popParams(java.util.List,com.google.common.collect.BiMap)">
@@ -667,8 +685,8 @@ implements <a href="../../solver/transformer/SmtLibTermTransformer.html" title="
 <ul class="blockListLast">
 <li class="blockList">
 <h4>popParams</h4>
-<pre class="methodSignature">protected&nbsp;&lt;T extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&nbsp;void&nbsp;popParams&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;T&gt;&gt;&nbsp;paramDecls,
-                                          com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;popParams&#8203;(java.util.List&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;? extends <a href="../../../../core/type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&gt;&nbsp;paramDecls,
+                         com.google.common.collect.BiMap&lt;<a href="../../../../core/decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;,&#8203;java.lang.String&gt;&nbsp;vars)</pre>
 </li>
 </ul>
 </li>

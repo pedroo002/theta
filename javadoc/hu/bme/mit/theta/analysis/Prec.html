@@ -26,6 +26,12 @@
     catch(err) {
     }
 //-->
+var data = {"i0":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 var pathtoroot = "../../../../../";
 var useModuleDirectories = true;
 loadScripts(document, 'script');</script>
@@ -84,13 +90,13 @@ loadScripts(document, 'script');</script>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.top">
@@ -121,11 +127,65 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="expl/ExplPrec.html" title="class in hu.bme.mit.theta.analysis.expl">ExplPrec</a></code>, <code><a href="../cfa/analysis/prec/GlobalCfaPrec.html" title="class in hu.bme.mit.theta.cfa.analysis.prec">GlobalCfaPrec</a></code>, <code><a href="../cfa/analysis/prec/LocalCfaPrec.html" title="class in hu.bme.mit.theta.cfa.analysis.prec">LocalCfaPrec</a></code>, <code><a href="pred/PredPrec.html" title="class in hu.bme.mit.theta.analysis.pred">PredPrec</a></code>, <code><a href="prod2/Prod2Prec.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2Prec</a></code>, <code><a href="prod3/Prod3Prec.html" title="class in hu.bme.mit.theta.analysis.prod3">Prod3Prec</a></code>, <code><a href="prod4/Prod4Prec.html" title="class in hu.bme.mit.theta.analysis.prod4">Prod4Prec</a></code>, <code><a href="unit/UnitPrec.html" title="class in hu.bme.mit.theta.analysis.unit">UnitPrec</a></code>, <code><a href="zone/ZonePrec.html" title="class in hu.bme.mit.theta.analysis.zone">ZonePrec</a></code></dd>
+<dd><code><a href="expl/ExplPrec.html" title="class in hu.bme.mit.theta.analysis.expl">ExplPrec</a></code>, <code><a href="../cfa/analysis/prec/GlobalCfaPrec.html" title="class in hu.bme.mit.theta.cfa.analysis.prec">GlobalCfaPrec</a></code>, <code><a href="../cfa/analysis/prec/LocalCfaPrec.html" title="class in hu.bme.mit.theta.cfa.analysis.prec">LocalCfaPrec</a></code>, <code><a href="pred/PredPrec.html" title="class in hu.bme.mit.theta.analysis.pred">PredPrec</a></code>, <code><a href="prod2/Prod2Prec.html" title="class in hu.bme.mit.theta.analysis.prod2">Prod2Prec</a></code>, <code><a href="prod3/Prod3Prec.html" title="class in hu.bme.mit.theta.analysis.prod3">Prod3Prec</a></code>, <code><a href="prod4/Prod4Prec.html" title="class in hu.bme.mit.theta.analysis.prod4">Prod4Prec</a></code>, <code><a href="unit/UnitPrec.html" title="class in hu.bme.mit.theta.analysis.unit">UnitPrec</a></code>, <code><a href="../xcfa/analysis/common/XcfaPrec.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaPrec</a></code>, <code><a href="../xcfa/analysis/impl/singlethread/XcfaSTPrec.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.singlethread">XcfaSTPrec</a></code>, <code><a href="zone/ZonePrec.html" title="class in hu.bme.mit.theta.analysis.zone">ZonePrec</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">Prec</span></pre>
 <div class="block">Common interface for precisions.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="memberSummary">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Method</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUsedVars()">getUsedVars</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a id="getUsedVars()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getUsedVars</h4>
+<pre class="methodSignature">java.util.Collection&lt;<a href="../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;&nbsp;getUsedVars()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 </li>
 </ul>
 </div>
@@ -177,13 +237,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a id="skip.navbar.bottom">

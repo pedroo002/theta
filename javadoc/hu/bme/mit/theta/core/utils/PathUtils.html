@@ -154,7 +154,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a></code></td>
+<td class="colFirst"><code>static <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#countPrimes(hu.bme.mit.theta.core.type.Expr)">countPrimes</a></span>&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;&nbsp;expr)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -177,16 +177,16 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.VarIndexing)">extractValuation</a></span>&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
-                <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">extractValuation</a></span>&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
+                <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</code></th>
 <td class="colLast">
 <div class="block">Extract values from a model for a given indexing.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.VarIndexing,java.util.Collection)">extractValuation</a></span>&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
-                <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.indexings.VarIndexing,java.util.Collection)">extractValuation</a></span>&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
+                <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing,
                 java.util.Collection&lt;? extends <a href="../decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;&nbsp;varDecls)</code></th>
 <td class="colLast">
 <div class="block">Extract values from a model for a given indexing and given variables.</div>
@@ -202,8 +202,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;<br><a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#foldin(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing)">foldin</a></span>&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
-      <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#foldin(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">foldin</a></span>&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
+      <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</code></th>
 <td class="colLast">
 <div class="block">Transform an expression by substituting indexed constants with variables.</div>
 </td>
@@ -218,8 +218,8 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;<br><a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unfold(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing)">unfold</a></span>&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
-      <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#unfold(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">unfold</a></span>&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
+      <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</code></th>
 <td class="colLast">
 <div class="block">Transform an expression by substituting variables with indexed constants.</div>
 </td>
@@ -254,17 +254,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>countPrimes</h4>
-<pre class="methodSignature">public static&nbsp;<a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;countPrimes&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;&nbsp;expr)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;countPrimes&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;?&gt;&nbsp;expr)</pre>
 </li>
 </ul>
-<a id="unfold(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing)">
+<a id="unfold(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>unfold</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T extends <a href="../type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&nbsp;<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;unfold&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
-                                              <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</pre>
+                                              <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</pre>
 <div class="block">Transform an expression by substituting variables with indexed constants.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -293,14 +293,14 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="foldin(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.VarIndexing)">
+<a id="foldin(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>foldin</h4>
 <pre class="methodSignature">public static&nbsp;&lt;T extends <a href="../type/Type.html" title="interface in hu.bme.mit.theta.core.type">Type</a>&gt;&nbsp;<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;foldin&#8203;(<a href="../type/Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;T&gt;&nbsp;expr,
-                                              <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</pre>
+                                              <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</pre>
 <div class="block">Transform an expression by substituting indexed constants with variables.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -329,14 +329,14 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.VarIndexing)">
+<a id="extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.indexings.VarIndexing)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extractValuation</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;extractValuation&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
-                                         <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing)</pre>
+                                         <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing)</pre>
 <div class="block">Extract values from a model for a given indexing. If you know the set of
  variables to be extracted, use that overload because it is more
  efficient.</div>
@@ -369,14 +369,14 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a id="extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.VarIndexing,java.util.Collection)">
+<a id="extractValuation(hu.bme.mit.theta.core.model.Valuation,hu.bme.mit.theta.core.utils.indexings.VarIndexing,java.util.Collection)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extractValuation</h4>
 <pre class="methodSignature">public static&nbsp;<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;extractValuation&#8203;(<a href="../model/Valuation.html" title="class in hu.bme.mit.theta.core.model">Valuation</a>&nbsp;model,
-                                         <a href="VarIndexing.html" title="class in hu.bme.mit.theta.core.utils">VarIndexing</a>&nbsp;indexing,
+                                         <a href="indexings/VarIndexing.html" title="interface in hu.bme.mit.theta.core.utils.indexings">VarIndexing</a>&nbsp;indexing,
                                          java.util.Collection&lt;? extends <a href="../decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;&nbsp;varDecls)</pre>
 <div class="block">Extract values from a model for a given indexing and given variables. If
  a variable has no value in the model, it will not be included in the

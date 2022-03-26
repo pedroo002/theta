@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,21 +163,26 @@ implements <a href="../Prec.html" title="interface in hu.bme.mit.theta.analysis"
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.Collection&lt;<a href="../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUsedVars()">getUsedVars</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;<a href="../../core/type/rattype/RatType.html" title="class in hu.bme.mit.theta.core.type.rattype">RatType</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVars()">getVars</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="ZonePrec.html" title="class in hu.bme.mit.theta.analysis.zone">ZonePrec</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#of(java.util.Collection)">of</a></span>&#8203;(java.util.Collection&lt;? extends <a href="../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;<a href="../../core/type/rattype/RatType.html" title="class in hu.bme.mit.theta.core.type.rattype">RatType</a>&gt;&gt;&nbsp;clocks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toString()">toString</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -253,13 +258,26 @@ implements <a href="../Prec.html" title="interface in hu.bme.mit.theta.analysis"
 <a id="hashCode()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a id="getUsedVars()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getUsedVars</h4>
+<pre class="methodSignature">public&nbsp;java.util.Collection&lt;<a href="../../core/decl/VarDecl.html" title="class in hu.bme.mit.theta.core.decl">VarDecl</a>&lt;?&gt;&gt;&nbsp;getUsedVars()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../Prec.html#getUsedVars()">getUsedVars</a></code>&nbsp;in interface&nbsp;<code><a href="../Prec.html" title="interface in hu.bme.mit.theta.analysis">Prec</a></code></dd>
 </dl>
 </li>
 </ul>

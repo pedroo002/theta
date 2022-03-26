@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,7 +122,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="AbstractGraphWriter.html" title="class in hu.bme.mit.theta.common.visualization.writer">hu.bme.mit.theta.common.visualization.writer.AbstractGraphWriter</a></li>
+<li>
+<ul class="inheritance">
 <li>hu.bme.mit.theta.common.visualization.writer.GraphvizWriter</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public final class <span class="typeNameLabel">GraphvizWriter</span>
-extends java.lang.Object</pre>
+extends <a href="AbstractGraphWriter.html" title="class in hu.bme.mit.theta.common.visualization.writer">AbstractGraphWriter</a></pre>
 <div class="block">Class for writing graphs in GraphViz format.
  Known limitations (due to GraphViz):
  - Fill color of composite nodes is ignored.
@@ -191,29 +196,30 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeFile(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">writeFile</a></span>&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph,
-         java.lang.String&nbsp;fileName)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeFile(hu.bme.mit.theta.common.visualization.Graph,java.lang.String,hu.bme.mit.theta.common.visualization.writer.GraphvizWriter.Format)">writeFile</a></span>&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph,
          java.lang.String&nbsp;fileName,
          <a href="GraphvizWriter.Format.html" title="enum in hu.bme.mit.theta.common.visualization.writer">GraphvizWriter.Format</a>&nbsp;format)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeFileAutoConvert(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">writeFileAutoConvert</a></span>&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph,
                     java.lang.String&nbsp;fileName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeString(hu.bme.mit.theta.common.visualization.Graph)">writeString</a></span>&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.hu.bme.mit.theta.common.visualization.writer.AbstractGraphWriter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;hu.bme.mit.theta.common.visualization.writer.<a href="AbstractGraphWriter.html" title="class in hu.bme.mit.theta.common.visualization.writer">AbstractGraphWriter</a></h3>
+<code><a href="AbstractGraphWriter.html#writeFile(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">writeFile</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -256,6 +262,8 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="GraphWriter.html#writeString(hu.bme.mit.theta.common.visualization.Graph)">writeString</a></code>&nbsp;in interface&nbsp;<code><a href="GraphWriter.html" title="interface in hu.bme.mit.theta.common.visualization.writer">GraphWriter</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="AbstractGraphWriter.html#writeString(hu.bme.mit.theta.common.visualization.Graph)">writeString</a></code>&nbsp;in class&nbsp;<code><a href="AbstractGraphWriter.html" title="class in hu.bme.mit.theta.common.visualization.writer">AbstractGraphWriter</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -280,7 +288,7 @@ extends java.lang.Object</pre>
 <a id="writeFileAutoConvert(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>writeFileAutoConvert</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;writeFileAutoConvert&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph,
@@ -291,23 +299,6 @@ extends java.lang.Object</pre>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 <dd><code>java.lang.InterruptedException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="writeFile(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>writeFile</h4>
-<pre class="methodSignature">public final&nbsp;void&nbsp;writeFile&#8203;(<a href="../Graph.html" title="class in hu.bme.mit.theta.common.visualization">Graph</a>&nbsp;graph,
-                            java.lang.String&nbsp;fileName)
-                     throws java.io.FileNotFoundException</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="GraphWriter.html#writeFile(hu.bme.mit.theta.common.visualization.Graph,java.lang.String)">writeFile</a></code>&nbsp;in interface&nbsp;<code><a href="GraphWriter.html" title="interface in hu.bme.mit.theta.common.visualization.writer">GraphWriter</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.FileNotFoundException</code></dd>
 </dl>
 </li>
 </ul>

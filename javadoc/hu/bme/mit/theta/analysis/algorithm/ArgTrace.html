@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -170,37 +170,47 @@ implements java.lang.Iterable&lt;<a href="ArgNode.html" title="class in hu.bme.m
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(java.lang.Object&nbsp;o)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hashCode()">hashCode</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="ArgNode.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgNode</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#length()">length</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Gets the length of the trace, i.e., the number of edges.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="ArgNode.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgNode</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#node(int)">node</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="ArgNode.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgNode</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nodes()">nodes</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static &lt;S extends <a href="../State.html" title="interface in hu.bme.mit.theta.analysis">State</a>,&#8203;A extends <a href="../Action.html" title="interface in hu.bme.mit.theta.analysis">Action</a>&gt;<br><a href="ArgTrace.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgTrace</a>&lt;S,&#8203;A&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#to(hu.bme.mit.theta.analysis.algorithm.ArgNode)">to</a></span>&#8203;(<a href="ArgNode.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgNode</a>&lt;S,&#8203;A&gt;&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../Trace.html" title="class in hu.bme.mit.theta.analysis">Trace</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTrace()">toTrace</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Converts the ArgTrace to a Trace by extrancting states and actions from
+<div class="block">Converts the ArgTrace to a Trace by extracting states and actions from
  nodes and edges respectively.</div>
 </td>
 </tr>
@@ -210,7 +220,7 @@ implements java.lang.Iterable&lt;<a href="ArgNode.html" title="class in hu.bme.m
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Iterable">
@@ -297,20 +307,46 @@ implements java.lang.Iterable&lt;<a href="ArgNode.html" title="class in hu.bme.m
 <li class="blockList">
 <h4>toTrace</h4>
 <pre class="methodSignature">public&nbsp;<a href="../Trace.html" title="class in hu.bme.mit.theta.analysis">Trace</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;&nbsp;toTrace()</pre>
-<div class="block">Converts the ArgTrace to a Trace by extrancting states and actions from
+<div class="block">Converts the ArgTrace to a Trace by extracting states and actions from
  nodes and edges respectively.</div>
 </li>
 </ul>
 <a id="iterator()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
 <pre class="methodSignature">public&nbsp;java.util.Iterator&lt;<a href="ArgNode.html" title="class in hu.bme.mit.theta.analysis.algorithm">ArgNode</a>&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a>,&#8203;<a href="ArgTrace.html" title="type parameter in ArgTrace">A</a>&gt;&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;<a href="ArgTrace.html" title="type parameter in ArgTrace">S</a> extends <a href="../State.html" title="interface in hu.bme.mit.theta.analysis">State</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a id="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a id="hashCode()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
