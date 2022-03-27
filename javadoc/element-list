@@ -21,6 +21,7 @@ hu.bme.mit.theta.analysis.utils
 hu.bme.mit.theta.analysis.waitlist
 hu.bme.mit.theta.analysis.zone
 hu.bme.mit.theta.c.frontend.dsl.gen
+hu.bme.mit.theta.cat.dsl
 hu.bme.mit.theta.cat.dsl.gen
 hu.bme.mit.theta.cat.models
 hu.bme.mit.theta.cat.solver
