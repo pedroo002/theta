@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,6 +143,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;T&gt;</code>, <code>org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</code></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="../CatVisitor.html" title="class in hu.bme.mit.theta.cat.dsl">CatVisitor</a></code></dd>
+</dl>
 <hr>
 <pre>public class <span class="typeNameLabel">CatBaseVisitor&lt;T&gt;</span>
 extends org.antlr.v4.runtime.tree.AbstractParseTreeVisitor&lt;T&gt;
@@ -192,6 +196,186 @@ implements <a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.ds
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitAcyclicDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.AcyclicDefinitionContext)">visitAcyclicDefinition</a></span>&#8203;(<a href="CatParser.AcyclicDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.AcyclicDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>acyclicDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.DefinitionContext)">visitDefinition</a></span>&#8203;(<a href="CatParser.DefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.DefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#definition()"><code>CatParser.definition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitEmptyDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.EmptyDefinitionContext)">visitEmptyDefinition</a></span>&#8203;(<a href="CatParser.EmptyDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.EmptyDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>emptyDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExpr(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprContext)">visitExpr</a></span>&#8203;(<a href="CatParser.ExprContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>expr</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprBasic(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprBasicContext)">visitExprBasic</a></span>&#8203;(<a href="CatParser.ExprBasicContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprBasicContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprBasic</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprCartesian(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCartesianContext)">visitExprCartesian</a></span>&#8203;(<a href="CatParser.ExprCartesianContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCartesianContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprCartesian</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprComplement(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprComplementContext)">visitExprComplement</a></span>&#8203;(<a href="CatParser.ExprComplementContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprComplementContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprComplement</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprComposition(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCompositionContext)">visitExprComposition</a></span>&#8203;(<a href="CatParser.ExprCompositionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCompositionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprComposition</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></span>&#8203;(<a href="CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></span>&#8203;(<a href="CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></span>&#8203;(<a href="CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIntersection(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIntersectionContext)">visitExprIntersection</a></span>&#8203;(<a href="CatParser.ExprIntersectionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIntersectionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprIntersection</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprInverse(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprInverseContext)">visitExprInverse</a></span>&#8203;(<a href="CatParser.ExprInverseContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprInverseContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprInverse</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprMinus(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprMinusContext)">visitExprMinus</a></span>&#8203;(<a href="CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprMinus</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprOptional(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprOptionalContext)">visitExprOptional</a></span>&#8203;(<a href="CatParser.ExprOptionalContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprOptionalContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprOptional</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></span>&#8203;(<a href="CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTransitive(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransitiveContext)">visitExprTransitive</a></span>&#8203;(<a href="CatParser.ExprTransitiveContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransitiveContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprTransitive</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">visitExprTransRef</a></span>&#8203;(<a href="CatParser.ExprTransRefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransRefContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprTransRef</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprUnion(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprUnionContext)">visitExprUnion</a></span>&#8203;(<a href="CatParser.ExprUnionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprUnionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprUnion</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitIrreflexiveDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.IrreflexiveDefinitionContext)">visitIrreflexiveDefinition</a></span>&#8203;(<a href="CatParser.IrreflexiveDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.IrreflexiveDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>irreflexiveDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></span>&#8203;(<a href="CatParser.LetDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letDefinition()"><code>CatParser.letDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">visitLetRecAndDefinition</a></span>&#8203;(<a href="CatParser.LetRecAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecAndDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecAndDefinition()"><code>CatParser.letRecAndDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></span>&#8203;(<a href="CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitMcm(hu.bme.mit.theta.cat.dsl.gen.CatParser.McmContext)">visitMcm</a></span>&#8203;(<a href="CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -258,7 +442,7 @@ implements <a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.ds
 <a id="visitMcm(hu.bme.mit.theta.cat.dsl.gen.CatParser.McmContext)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>visitMcm</h4>
 <pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitMcm&#8203;(<a href="CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a>&nbsp;ctx)</pre>
@@ -269,6 +453,508 @@ implements <a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.ds
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="CatVisitor.html#visitMcm(hu.bme.mit.theta.cat.dsl.gen.CatParser.McmContext)">visitMcm</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.DefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitDefinition&#8203;(<a href="CatParser.DefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.DefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#definition()"><code>CatParser.definition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.DefinitionContext)">visitDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitAcyclicDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.AcyclicDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitAcyclicDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitAcyclicDefinition&#8203;(<a href="CatParser.AcyclicDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.AcyclicDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>acyclicDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitAcyclicDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.AcyclicDefinitionContext)">visitAcyclicDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitIrreflexiveDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.IrreflexiveDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitIrreflexiveDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitIrreflexiveDefinition&#8203;(<a href="CatParser.IrreflexiveDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.IrreflexiveDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>irreflexiveDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitIrreflexiveDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.IrreflexiveDefinitionContext)">visitIrreflexiveDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitEmptyDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.EmptyDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitEmptyDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitEmptyDefinition&#8203;(<a href="CatParser.EmptyDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.EmptyDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>emptyDefinition</code>
+ labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitEmptyDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.EmptyDefinitionContext)">visitEmptyDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitLetDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitLetDefinition&#8203;(<a href="CatParser.LetDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letDefinition()"><code>CatParser.letDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitLetRecDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitLetRecDefinition&#8203;(<a href="CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitLetRecAndDefinition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitLetRecAndDefinition&#8203;(<a href="CatParser.LetRecAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecAndDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecAndDefinition()"><code>CatParser.letRecAndDefinition()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">visitLetRecAndDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprCartesian(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCartesianContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprCartesian</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprCartesian&#8203;(<a href="CatParser.ExprCartesianContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCartesianContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprCartesian</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprCartesian(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCartesianContext)">visitExprCartesian</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprRangeIdentity</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprRangeIdentity&#8203;(<a href="CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprBasic(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprBasicContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprBasic</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprBasic&#8203;(<a href="CatParser.ExprBasicContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprBasicContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprBasic</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprBasic(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprBasicContext)">visitExprBasic</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprMinus(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprMinusContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprMinus</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprMinus&#8203;(<a href="CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprMinus</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprMinus(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprMinusContext)">visitExprMinus</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprUnion(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprUnionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprUnion</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprUnion&#8203;(<a href="CatParser.ExprUnionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprUnionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprUnion</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprUnion(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprUnionContext)">visitExprUnion</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprComposition(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCompositionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprComposition</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprComposition&#8203;(<a href="CatParser.ExprCompositionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCompositionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprComposition</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprComposition(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCompositionContext)">visitExprComposition</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprIntersection(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIntersectionContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprIntersection</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprIntersection&#8203;(<a href="CatParser.ExprIntersectionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIntersectionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprIntersection</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprIntersection(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIntersectionContext)">visitExprIntersection</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprTransitive(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransitiveContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprTransitive</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprTransitive&#8203;(<a href="CatParser.ExprTransitiveContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransitiveContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprTransitive</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprTransitive(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransitiveContext)">visitExprTransitive</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprComplement(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprComplementContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprComplement</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprComplement&#8203;(<a href="CatParser.ExprComplementContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprComplementContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprComplement</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprComplement(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprComplementContext)">visitExprComplement</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprInverse(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprInverseContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprInverse</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprInverse&#8203;(<a href="CatParser.ExprInverseContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprInverseContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprInverse</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprInverse(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprInverseContext)">visitExprInverse</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprDomainIdentity</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprDomainIdentity&#8203;(<a href="CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprIdentity</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprIdentity&#8203;(<a href="CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprTransRef</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprTransRef&#8203;(<a href="CatParser.ExprTransRefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransRefContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprTransRef</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">visitExprTransRef</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprFencerel</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprFencerel&#8203;(<a href="CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExpr(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExpr</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExpr&#8203;(<a href="CatParser.ExprContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>expr</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExpr(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprContext)">visitExpr</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprOptional(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprOptionalContext)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>visitExprOptional</h4>
+<pre class="methodSignature">public&nbsp;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&nbsp;visitExprOptional&#8203;(<a href="CatParser.ExprOptionalContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprOptionalContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprOptional</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="CatVisitor.html#visitExprOptional(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprOptionalContext)">visitExprOptional</a></code>&nbsp;in interface&nbsp;<code><a href="CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="CatBaseVisitor.html" title="type parameter in CatBaseVisitor">T</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

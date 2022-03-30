@@ -87,6 +87,7 @@
 <li><a href="hu/bme/mit/theta/core/utils/indexings/BasicVarIndexing.html" title="class in hu.bme.mit.theta.core.utils.indexings">BasicVarIndexing</a></li>
 <li><a href="hu/bme/mit/theta/core/utils/indexings/BasicVarIndexing.BasicVarIndexingBuilder.html" title="class in hu.bme.mit.theta.core.utils.indexings">BasicVarIndexing.BasicVarIndexingBuilder</a></li>
 <li><a href="hu/bme/mit/theta/core/type/BinaryExpr.html" title="class in hu.bme.mit.theta.core.type">BinaryExpr</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/BinaryMCMRule.html" title="class in hu.bme.mit.theta.cat.mcm.rules">BinaryMCMRule</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/grammar/preprocess/BitwiseChecker.html" title="class in hu.bme.mit.theta.frontend.transformation.grammar.preprocess">BitwiseChecker</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/grammar/preprocess/BitwiseOption.html" title="enum in hu.bme.mit.theta.frontend.transformation.grammar.preprocess">BitwiseOption</a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/bmc/BmcChecker.html" title="class in hu.bme.mit.theta.analysis.algorithm.bmc">BmcChecker</a></li>
@@ -95,7 +96,6 @@
 <li><a href="hu/bme/mit/theta/solver/smtlib/impl/boolector/BoolectorSmtLibSolverInstaller.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.boolector">BoolectorSmtLibSolverInstaller</a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/BoolExprs.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolExprs</a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/BoolLitExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolLitExpr</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/BoolSmtMemoryModelBuilder.html" title="class in hu.bme.mit.theta.cat.solver">BoolSmtMemoryModelBuilder</a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a></li>
 <li><a href="hu/bme/mit/theta/analysis/zone/BoundFunc.html" title="class in hu.bme.mit.theta.analysis.zone">BoundFunc</a></li>
 <li><a href="hu/bme/mit/theta/analysis/zone/BoundFunc.Builder.html" title="class in hu.bme.mit.theta.analysis.zone">BoundFunc.Builder</a></li>
@@ -140,6 +140,7 @@
 <li><a href="hu/bme/mit/theta/xcfa/passes/procedurepass/CallsToFinalLocs.html" title="class in hu.bme.mit.theta.xcfa.passes.procedurepass">CallsToFinalLocs</a></li>
 <li><a href="hu/bme/mit/theta/xcfa/passes/procedurepass/CallsToHavocs.html" title="class in hu.bme.mit.theta.xcfa.passes.procedurepass">CallsToHavocs</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/types/complex/compound/CArray.html" title="class in hu.bme.mit.theta.frontend.transformation.model.types.complex.compound">CArray</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/CartesianProduct.html" title="class in hu.bme.mit.theta.cat.mcm.rules">CartesianProduct</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/statements/CAssignment.html" title="class in hu.bme.mit.theta.frontend.transformation.model.statements">CAssignment</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/statements/CAssume.html" title="class in hu.bme.mit.theta.frontend.transformation.model.statements">CAssume</a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/Castable.html" title="interface in hu.bme.mit.theta.core.type.abstracttype"><span class="interfaceName">Castable</span></a></li>
@@ -148,10 +149,37 @@
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/types/complex/visitors/integer/CastVisitor.html" title="class in hu.bme.mit.theta.frontend.transformation.model.types.complex.visitors.integer">CastVisitor</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatBaseListener.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseListener</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/CatDslManager.html" title="class in hu.bme.mit.theta.cat.dsl">CatDslManager</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatLexer.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatLexer</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatListener.html" title="interface in hu.bme.mit.theta.cat.dsl.gen"><span class="interfaceName">CatListener</span></a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.AcyclicDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.AcyclicDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.AxiomDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.AxiomDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.DefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.DefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.EmptyDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.EmptyDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprBasicContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprBasicContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprCartesianContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCartesianContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprComplementContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprComplementContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprCompositionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprCompositionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExpressionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExpressionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprIntersectionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIntersectionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprInverseContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprInverseContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprOptionalContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprOptionalContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprTransitiveContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransitiveContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprTransRefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransRefContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.ExprUnionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprUnionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.IrreflexiveDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.IrreflexiveDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.LetDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.LetRecAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecAndDefinitionContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a></li>
+<li><a href="hu/bme/mit/theta/cat/dsl/CatVisitor.html" title="class in hu.bme.mit.theta.cat.dsl">CatVisitor</a></li>
 <li><a href="hu/bme/mit/theta/cat/dsl/gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen"><span class="interfaceName">CatVisitor</span></a></li>
 <li><a href="hu/bme/mit/theta/c/frontend/dsl/gen/CBaseListener.html" title="class in hu.bme.mit.theta.c.frontend.dsl.gen">CBaseListener</a></li>
 <li><a href="hu/bme/mit/theta/c/frontend/dsl/gen/CBaseVisitor.html" title="class in hu.bme.mit.theta.c.frontend.dsl.gen">CBaseVisitor</a></li>
@@ -300,7 +328,7 @@
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/types/complex/integer/clong/CLong.html" title="class in hu.bme.mit.theta.frontend.transformation.model.types.complex.integer.clong">CLong</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/types/complex/real/CLongDouble.html" title="class in hu.bme.mit.theta.frontend.transformation.model.types.complex.real">CLongDouble</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/model/types/complex/integer/clonglong/CLongLong.html" title="class in hu.bme.mit.theta.frontend.transformation.model.types.complex.integer.clonglong">CLongLong</a></li>
-<li><a href="hu/bme/mit/theta/cat/models/CoherenceMemory.html" title="class in hu.bme.mit.theta.cat.models">CoherenceMemory</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Complement.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Complement</a></li>
 <li><a href="hu/bme/mit/theta/xcfa/analysis/portfolio/ComplexPortfolio.html" title="class in hu.bme.mit.theta.xcfa.analysis.portfolio">ComplexPortfolio</a></li>
 <li><a href="hu/bme/mit/theta/common/visualization/CompositeNode.html" title="class in hu.bme.mit.theta.common.visualization">CompositeNode</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/utils/Compress.html" title="class in hu.bme.mit.theta.solver.smtlib.utils">Compress</a></li>
@@ -555,6 +583,7 @@
 <li><a href="hu/bme/mit/theta/common/datalog/Datalog.html" title="class in hu.bme.mit.theta.common.datalog">Datalog</a></li>
 <li><a href="hu/bme/mit/theta/common/datalog/Datalog.Variable.html" title="class in hu.bme.mit.theta.common.datalog">Datalog.Variable</a></li>
 <li><a href="hu/bme/mit/theta/common/datalog/DatalogArgument.html" title="interface in hu.bme.mit.theta.common.datalog"><span class="interfaceName">DatalogArgument</span></a></li>
+<li><a href="hu/bme/mit/theta/cat/solver/DatalogSolver.html" title="class in hu.bme.mit.theta.cat.solver">DatalogSolver</a></li>
 <li><a href="hu/bme/mit/theta/xta/analysis/lazy/DataStrategy.html" title="enum in hu.bme.mit.theta.xta.analysis.lazy">DataStrategy</a></li>
 <li><a href="hu/bme/mit/theta/core/decl/Decl.html" title="class in hu.bme.mit.theta.core.decl">Decl</a></li>
 <li><a href="hu/bme/mit/theta/frontend/transformation/grammar/type/DeclarationVisitor.html" title="class in hu.bme.mit.theta.frontend.transformation.grammar.type">DeclarationVisitor</a></li>
@@ -567,6 +596,7 @@
 <li><a href="hu/bme/mit/theta/frontend/transformation/grammar/expression/Dereference.html" title="class in hu.bme.mit.theta.frontend.transformation.grammar.expression">Dereference</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/DiffConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">DiffConstr</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/DiffEqConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">DiffEqConstr</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Difference.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Difference</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/DiffGeqConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">DiffGeqConstr</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/DiffGtConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">DiffGtConstr</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/DiffLeqConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">DiffLeqConstr</a></li>
@@ -591,7 +621,6 @@
 <li><a href="hu/bme/mit/theta/common/dsl/Env.html" title="class in hu.bme.mit.theta.common.dsl">Env</a></li>
 <li><a href="hu/bme/mit/theta/core/parser/Env.html" title="class in hu.bme.mit.theta.core.parser">Env</a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/EqExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype">EqExpr</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/EqualityLinkedHashMap.html" title="class in hu.bme.mit.theta.cat.solver">EqualityLinkedHashMap</a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/Equational.html" title="interface in hu.bme.mit.theta.core.type.abstracttype"><span class="interfaceName">Equational</span></a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/ExistsExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ExistsExpr</a></li>
 <li><a href="hu/bme/mit/theta/analysis/expl/ExplAnalysis.html" title="class in hu.bme.mit.theta.analysis.expl">ExplAnalysis</a></li>
@@ -721,6 +750,7 @@
 <li><a href="hu/bme/mit/theta/xcfa/passes/procedurepass/HavocPromotion.html" title="class in hu.bme.mit.theta.xcfa.passes.procedurepass">HavocPromotion</a></li>
 <li><a href="hu/bme/mit/theta/core/stmt/HavocStmt.html" title="class in hu.bme.mit.theta.core.stmt">HavocStmt</a></li>
 <li><a href="hu/bme/mit/theta/common/table/HtmlTableWriter.html" title="class in hu.bme.mit.theta.common.table">HtmlTableWriter</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/IdentityClosure.html" title="class in hu.bme.mit.theta.cat.mcm.rules">IdentityClosure</a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/IffExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">IffExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/stmt/IfStmt.html" title="class in hu.bme.mit.theta.core.stmt">IfStmt</a></li>
 <li><a href="hu/bme/mit/theta/core/model/ImmutableValuation.html" title="class in hu.bme.mit.theta.core.model">ImmutableValuation</a></li>
@@ -742,6 +772,7 @@
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntDivExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntDivExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntEqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntEqExpr</a></li>
 <li><a href="hu/bme/mit/theta/solver/Interpolant.html" title="interface in hu.bme.mit.theta.solver"><span class="interfaceName">Interpolant</span></a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Intersection.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Intersection</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntExprs.html" title="class in hu.bme.mit.theta.core.type.inttype">IntExprs</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntGeqExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGeqExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntGtExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntGtExpr</a></li>
@@ -758,6 +789,7 @@
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntSubExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntSubExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntToRatExpr.html" title="class in hu.bme.mit.theta.core.type.inttype">IntToRatExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/inttype/IntType.html" title="class in hu.bme.mit.theta.core.type.inttype">IntType</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Inverse.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Inverse</a></li>
 <li><a href="hu/bme/mit/theta/core/type/anytype/IteExpr.html" title="class in hu.bme.mit.theta.core.type.anytype">IteExpr</a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/bmc/IterativeBmcChecker.html" title="class in hu.bme.mit.theta.analysis.algorithm.bmc">IterativeBmcChecker</a></li>
 <li><a href="hu/bme/mit/theta/xta/analysis/expl/itp/ItpExplAnalysis.html" title="class in hu.bme.mit.theta.xta.analysis.expl.itp">ItpExplAnalysis</a></li>
@@ -816,8 +848,11 @@
 <li><a href="hu/bme/mit/theta/solver/smtlib/impl/mathsat/MathSATSmtLibSolverFactory.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.mathsat">MathSATSmtLibSolverFactory</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/impl/mathsat/MathSATSmtLibSolverInstaller.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.mathsat">MathSATSmtLibSolverInstaller</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/impl/mathsat/MathSATSmtLibTransformationManager.html" title="class in hu.bme.mit.theta.solver.smtlib.impl.mathsat">MathSATSmtLibTransformationManager</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/MemoryModel.html" title="class in hu.bme.mit.theta.cat.solver">MemoryModel</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/MemoryModelBuilder.html" title="class in hu.bme.mit.theta.cat.solver">MemoryModelBuilder</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/MCM.html" title="class in hu.bme.mit.theta.cat.mcm">MCM</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/MCMConstraint.html" title="class in hu.bme.mit.theta.cat.mcm">MCMConstraint</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/MCMConstraint.ConstraintType.html" title="enum in hu.bme.mit.theta.cat.mcm">MCMConstraint.ConstraintType</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/MCMRule.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRule</a></li>
 <li><a href="hu/bme/mit/theta/xcfa/analysis/portfolio/statistics/ModelStatistics.html" title="class in hu.bme.mit.theta.xcfa.analysis.portfolio.statistics">ModelStatistics</a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/ModExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype">ModExpr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/MulExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype">MulExpr</a></li>
@@ -833,7 +868,6 @@
 <li><a href="hu/bme/mit/theta/core/model/NestedSubstitution.html" title="class in hu.bme.mit.theta.core.model">NestedSubstitution</a></li>
 <li><a href="hu/bme/mit/theta/analysis/expr/refinement/autoexpl/NewAtomsAutoExpl.html" title="class in hu.bme.mit.theta.analysis.expr.refinement.autoexpl">NewAtomsAutoExpl</a></li>
 <li><a href="hu/bme/mit/theta/analysis/expr/refinement/autoexpl/NewOperandsAutoExpl.html" title="class in hu.bme.mit.theta.analysis.expr.refinement.autoexpl">NewOperandsAutoExpl</a></li>
-<li><a href="hu/bme/mit/theta/cat/models/NoassertMemory.html" title="class in hu.bme.mit.theta.cat.models">NoassertMemory</a></li>
 <li><a href="hu/bme/mit/theta/common/visualization/Node.html" title="class in hu.bme.mit.theta.common.visualization">Node</a></li>
 <li><a href="hu/bme/mit/theta/common/visualization/NodeAttributes.html" title="class in hu.bme.mit.theta.common.visualization">NodeAttributes</a></li>
 <li><a href="hu/bme/mit/theta/common/visualization/NodeAttributes.Builder.html" title="class in hu.bme.mit.theta.common.visualization">NodeAttributes.Builder</a></li>
@@ -949,6 +983,7 @@
 <li><a href="hu/bme/mit/theta/analysis/algorithm/cegar/RefinerResult.html" title="class in hu.bme.mit.theta.analysis.algorithm.cegar">RefinerResult</a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/cegar/RefinerResult.Spurious.html" title="class in hu.bme.mit.theta.analysis.algorithm.cegar">RefinerResult.Spurious</a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/cegar/RefinerResult.Unsafe.html" title="class in hu.bme.mit.theta.analysis.algorithm.cegar">RefinerResult.Unsafe</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/ReflexiveTransitiveClosure.html" title="class in hu.bme.mit.theta.cat.mcm.rules">ReflexiveTransitiveClosure</a></li>
 <li><a href="hu/bme/mit/theta/analysis/expr/refinement/Refutation.html" title="interface in hu.bme.mit.theta.analysis.expr.refinement"><span class="interfaceName">Refutation</span></a></li>
 <li><a href="hu/bme/mit/theta/analysis/expr/refinement/RefutationToPrec.html" title="interface in hu.bme.mit.theta.analysis.expr.refinement"><span class="interfaceName">RefutationToPrec</span></a></li>
 <li><a href="hu/bme/mit/theta/core/type/abstracttype/RemExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype">RemExpr</a></li>
@@ -956,17 +991,6 @@
 <li><a href="hu/bme/mit/theta/xcfa/passes/xcfapass/RemoveUnusedGlobals.html" title="class in hu.bme.mit.theta.xcfa.passes.xcfapass">RemoveUnusedGlobals</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/op/ResetOp.html" title="class in hu.bme.mit.theta.core.clock.op">ResetOp</a></li>
 <li><a href="hu/bme/mit/theta/xcfa/analysis/portfolio/common/Result.html" title="enum in hu.bme.mit.theta.xcfa.analysis.portfolio.common">Result</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.CartesianProduct.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.CartesianProduct</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Consecutive.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Consecutive</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Difference.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Difference</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Element.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Element</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Intersection.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Intersection</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Inverse.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Inverse</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.SelfOrTransitive.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.SelfOrTransitive</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Transitive.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Transitive</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivation.Union.html" title="class in hu.bme.mit.theta.cat.solver">RuleDerivation.Union</a></li>
-<li><a href="hu/bme/mit/theta/cat/solver/RuleDerivationVisitor.html" title="interface in hu.bme.mit.theta.cat.solver"><span class="interfaceName">RuleDerivationVisitor</span></a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/SafetyChecker.html" title="interface in hu.bme.mit.theta.analysis.algorithm"><span class="interfaceName">SafetyChecker</span></a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/SafetyResult.html" title="class in hu.bme.mit.theta.analysis.algorithm">SafetyResult</a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/SafetyResult.Safe.html" title="class in hu.bme.mit.theta.analysis.algorithm">SafetyResult.Safe</a></li>
@@ -974,9 +998,11 @@
 <li><a href="hu/bme/mit/theta/common/dsl/Scope.html" title="interface in hu.bme.mit.theta.common.dsl"><span class="interfaceName">Scope</span></a></li>
 <li><a href="hu/bme/mit/theta/common/dsl/ScopedSymbol.html" title="interface in hu.bme.mit.theta.common.dsl"><span class="interfaceName">ScopedSymbol</span></a></li>
 <li><a href="hu/bme/mit/theta/analysis/algorithm/SearchStrategy.html" title="enum in hu.bme.mit.theta.analysis.algorithm">SearchStrategy</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Self.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Self</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/utils/SemVer.html" title="class in hu.bme.mit.theta.solver.smtlib.utils">SemVer</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/utils/SemVer.VersionDecoder.html" title="class in hu.bme.mit.theta.solver.smtlib.utils">SemVer.VersionDecoder</a></li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/utils/SemVer.VersionDecoder.Builder.html" title="class in hu.bme.mit.theta.solver.smtlib.utils">SemVer.VersionDecoder.Builder</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Sequence.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Sequence</a></li>
 <li><a href="hu/bme/mit/theta/core/stmt/SequenceStmt.html" title="class in hu.bme.mit.theta.core.stmt">SequenceStmt</a></li>
 <li><a href="hu/bme/mit/theta/xcfa/analysis/portfolio/SequentialPortfolio.html" title="class in hu.bme.mit.theta.xcfa.analysis.portfolio">SequentialPortfolio</a></li>
 <li><a href="hu/bme/mit/theta/common/parser/SExpr.html" title="class in hu.bme.mit.theta.common.parser">SExpr</a></li>
@@ -1205,6 +1231,7 @@
 <li><a href="hu/bme/mit/theta/analysis/Trace.html" title="class in hu.bme.mit.theta.analysis">Trace</a></li>
 <li><a href="hu/bme/mit/theta/analysis/utils/TraceVisualizer.html" title="class in hu.bme.mit.theta.analysis.utils">TraceVisualizer</a></li>
 <li><a href="hu/bme/mit/theta/analysis/TransFunc.html" title="interface in hu.bme.mit.theta.analysis"><span class="interfaceName">TransFunc</span></a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/TransitiveClosure.html" title="class in hu.bme.mit.theta.cat.mcm.rules">TransitiveClosure</a></li>
 <li><a href="hu/bme/mit/theta/common/TriFunction.html" title="interface in hu.bme.mit.theta.common"><span class="interfaceName">TriFunction</span></a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/TrueConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">TrueConstr</a></li>
 <li><a href="hu/bme/mit/theta/core/type/booltype/TrueExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">TrueExpr</a></li>
@@ -1230,6 +1257,8 @@
 <li><a href="hu/bme/mit/theta/solver/UCSolver.html" title="interface in hu.bme.mit.theta.solver"><span class="interfaceName">UCSolver</span></a></li>
 <li><a href="hu/bme/mit/theta/solver/validator/UCSolverValidatorWrapper.html" title="class in hu.bme.mit.theta.solver.validator">UCSolverValidatorWrapper</a></li>
 <li><a href="hu/bme/mit/theta/core/type/UnaryExpr.html" title="class in hu.bme.mit.theta.core.type">UnaryExpr</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/UnaryMCMRule.html" title="class in hu.bme.mit.theta.cat.mcm.rules">UnaryMCMRule</a></li>
+<li><a href="hu/bme/mit/theta/cat/mcm/rules/Union.html" title="class in hu.bme.mit.theta.cat.mcm.rules">Union</a></li>
 <li><a href="hu/bme/mit/theta/common/Unit.html" title="class in hu.bme.mit.theta.common">Unit</a></li>
 <li><a href="hu/bme/mit/theta/analysis/unit/UnitAnalysis.html" title="class in hu.bme.mit.theta.analysis.unit">UnitAnalysis</a></li>
 <li><a href="hu/bme/mit/theta/core/clock/constr/UnitConstr.html" title="class in hu.bme.mit.theta.core.clock.constr">UnitConstr</a></li>
