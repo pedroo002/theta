@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,29 +224,21 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></span>&#8203;(<a href="CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">visitExprDomain</a></span>&#8203;(<a href="CatParser.ExprDomainContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
+<div class="block">Visit a parse tree produced by the <code>exprDomain</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></span>&#8203;(<a href="CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">visitExprFunctionCall</a></span>&#8203;(<a href="CatParser.ExprFunctionCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFunctionCallContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
+<div class="block">Visit a parse tree produced by the <code>exprFunctionCall</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></span>&#8203;(<a href="CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</code></th>
-<td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
- labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIntersection(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIntersectionContext)">visitExprIntersection</a></span>&#8203;(<a href="CatParser.ExprIntersectionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIntersectionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -254,7 +246,7 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprInverse(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprInverseContext)">visitExprInverse</a></span>&#8203;(<a href="CatParser.ExprInverseContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprInverseContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -262,11 +254,19 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprMinus(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprMinusContext)">visitExprMinus</a></span>&#8203;(<a href="CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by the <code>exprMinus</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprNull(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprNullContext)">visitExprNull</a></span>&#8203;(<a href="CatParser.ExprNullContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprNullContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprNull</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
@@ -280,13 +280,21 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></span>&#8203;(<a href="CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">visitExprRange</a></span>&#8203;(<a href="CatParser.ExprRangeContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
+<div class="block">Visit a parse tree produced by the <code>exprRange</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">visitExprToid</a></span>&#8203;(<a href="CatParser.ExprToidContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprToidContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprToid</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTransitive(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransitiveContext)">visitExprTransitive</a></span>&#8203;(<a href="CatParser.ExprTransitiveContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransitiveContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -294,7 +302,7 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">visitExprTransRef</a></span>&#8203;(<a href="CatParser.ExprTransRefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransRefContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -302,7 +310,15 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">visitExprTryWith</a></span>&#8203;(<a href="CatParser.ExprTryWithContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTryWithContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprTryWith</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprUnion(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprUnionContext)">visitExprUnion</a></span>&#8203;(<a href="CatParser.ExprUnionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprUnionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -310,7 +326,14 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">visitFunctionDef</a></span>&#8203;(<a href="CatParser.FunctionDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.FunctionDefContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#functionDef()"><code>CatParser.functionDef()</code></a>.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitIrreflexiveDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.IrreflexiveDefinitionContext)">visitIrreflexiveDefinition</a></span>&#8203;(<a href="CatParser.IrreflexiveDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.IrreflexiveDefinitionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -318,32 +341,46 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
  labeled alternative in <a href="CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetAndDefinitionContext)">visitLetAndDefinition</a></span>&#8203;(<a href="CatParser.LetAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetAndDefinitionContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letAndDefinition()"><code>CatParser.letAndDefinition()</code></a>.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></span>&#8203;(<a href="CatParser.LetDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetDefinitionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by <a href="CatParser.html#letDefinition()"><code>CatParser.letDefinition()</code></a>.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">visitLetRecAndDefinition</a></span>&#8203;(<a href="CatParser.LetRecAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecAndDefinitionContext</a>&nbsp;ctx)</code></th>
-<td class="colLast">
-<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecAndDefinition()"><code>CatParser.letRecAndDefinition()</code></a>.</div>
-</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></span>&#8203;(<a href="CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</code></th>
-<td class="colLast">
-<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.</div>
-</td>
-</tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitMcm(hu.bme.mit.theta.cat.dsl.gen.CatParser.McmContext)">visitMcm</a></span>&#8203;(<a href="CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by <a href="CatParser.html#mcm()"><code>CatParser.mcm()</code></a>.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">visitProcCall</a></span>&#8203;(<a href="CatParser.ProcCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcCallContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#procCall()"><code>CatParser.procCall()</code></a>.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">visitProcDef</a></span>&#8203;(<a href="CatParser.ProcDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcDefContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#procDef()"><code>CatParser.procDef()</code></a>.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitScopeBody(hu.bme.mit.theta.cat.dsl.gen.CatParser.ScopeBodyContext)">visitScopeBody</a></span>&#8203;(<a href="CatParser.ScopeBodyContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ScopeBodyContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#scopeBody()"><code>CatParser.scopeBody()</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -378,6 +415,70 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 <h4>visitMcm</h4>
 <pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitMcm&#8203;(<a href="CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a>&nbsp;ctx)</pre>
 <div class="block">Visit a parse tree produced by <a href="CatParser.html#mcm()"><code>CatParser.mcm()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitScopeBody(hu.bme.mit.theta.cat.dsl.gen.CatParser.ScopeBodyContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitScopeBody</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitScopeBody&#8203;(<a href="CatParser.ScopeBodyContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ScopeBodyContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#scopeBody()"><code>CatParser.scopeBody()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitProcCall</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitProcCall&#8203;(<a href="CatParser.ProcCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcCallContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#procCall()"><code>CatParser.procCall()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitFunctionDef</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitFunctionDef&#8203;(<a href="CatParser.FunctionDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.FunctionDefContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#functionDef()"><code>CatParser.functionDef()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitProcDef</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitProcDef&#8203;(<a href="CatParser.ProcDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcDefContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#procDef()"><code>CatParser.procDef()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
@@ -469,30 +570,14 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </dl>
 </li>
 </ul>
-<a id="visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">
+<a id="visitLetAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetAndDefinitionContext)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>visitLetRecDefinition</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitLetRecDefinition&#8203;(<a href="CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitLetRecAndDefinition</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitLetRecAndDefinition&#8203;(<a href="CatParser.LetRecAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecAndDefinitionContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by <a href="CatParser.html#letRecAndDefinition()"><code>CatParser.letRecAndDefinition()</code></a>.</div>
+<h4>visitLetAndDefinition</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitLetAndDefinition&#8203;(<a href="CatParser.LetAndDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetAndDefinitionContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by <a href="CatParser.html#letAndDefinition()"><code>CatParser.letAndDefinition()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
@@ -518,14 +603,14 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </dl>
 </li>
 </ul>
-<a id="visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">
+<a id="visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>visitExprRangeIdentity</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprRangeIdentity&#8203;(<a href="CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
+<h4>visitExprToid</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprToid&#8203;(<a href="CatParser.ExprToidContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprToidContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprToid</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -560,6 +645,57 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 <h4>visitExprMinus</h4>
 <pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprMinus&#8203;(<a href="CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a>&nbsp;ctx)</pre>
 <div class="block">Visit a parse tree produced by the <code>exprMinus</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprRange</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprRange&#8203;(<a href="CatParser.ExprRangeContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprRange</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprTryWith</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprTryWith&#8203;(<a href="CatParser.ExprTryWithContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTryWithContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprTryWith</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprDomain</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprDomain&#8203;(<a href="CatParser.ExprDomainContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprDomain</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -620,6 +756,23 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </dl>
 </li>
 </ul>
+<a id="visitExprNull(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprNullContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprNull</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprNull&#8203;(<a href="CatParser.ExprNullContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprNullContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprNull</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
 <a id="visitExprTransitive(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransitiveContext)">
 <!--   -->
 </a>
@@ -671,40 +824,6 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 </dl>
 </li>
 </ul>
-<a id="visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprDomainIdentity</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprDomainIdentity&#8203;(<a href="CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
- labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprIdentity</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprIdentity&#8203;(<a href="CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
- labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
 <a id="visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">
 <!--   -->
 </a>
@@ -713,23 +832,6 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 <h4>visitExprTransRef</h4>
 <pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprTransRef&#8203;(<a href="CatParser.ExprTransRefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTransRefContext</a>&nbsp;ctx)</pre>
 <div class="block">Visit a parse tree produced by the <code>exprTransRef</code>
- labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprFencerel</h4>
-<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprFencerel&#8203;(<a href="CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</pre>
-<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -759,11 +861,28 @@ extends org.antlr.v4.runtime.tree.ParseTreeVisitor&lt;T&gt;</pre>
 <a id="visitExprOptional(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprOptionalContext)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>visitExprOptional</h4>
 <pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprOptional&#8203;(<a href="CatParser.ExprOptionalContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprOptionalContext</a>&nbsp;ctx)</pre>
 <div class="block">Visit a parse tree produced by the <code>exprOptional</code>
+ labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>visitExprFunctionCall</h4>
+<pre class="methodSignature"><a href="CatVisitor.html" title="type parameter in CatVisitor">T</a>&nbsp;visitExprFunctionCall&#8203;(<a href="CatParser.ExprFunctionCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFunctionCallContext</a>&nbsp;ctx)</pre>
+<div class="block">Visit a parse tree produced by the <code>exprFunctionCall</code>
  labeled alternative in <a href="CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

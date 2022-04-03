@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -255,29 +255,21 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></span>&#8203;(<a href="gen/CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">visitExprDomain</a></span>&#8203;(<a href="gen/CatParser.ExprDomainContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
+<div class="block">Visit a parse tree produced by the <code>exprDomain</code>
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></span>&#8203;(<a href="gen/CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">visitExprFunctionCall</a></span>&#8203;(<a href="gen/CatParser.ExprFunctionCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFunctionCallContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
+<div class="block">Visit a parse tree produced by the <code>exprFunctionCall</code>
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></span>&#8203;(<a href="gen/CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</code></th>
-<td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
- labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
-</td>
-</tr>
-<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprIntersection(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIntersectionContext)">visitExprIntersection</a></span>&#8203;(<a href="gen/CatParser.ExprIntersectionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIntersectionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -285,7 +277,7 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprInverse(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprInverseContext)">visitExprInverse</a></span>&#8203;(<a href="gen/CatParser.ExprInverseContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprInverseContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -293,7 +285,7 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprMinus(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprMinusContext)">visitExprMinus</a></span>&#8203;(<a href="gen/CatParser.ExprMinusContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprMinusContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -301,7 +293,7 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprOptional(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprOptionalContext)">visitExprOptional</a></span>&#8203;(<a href="gen/CatParser.ExprOptionalContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprOptionalContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -309,11 +301,19 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">visitExprRange</a></span>&#8203;(<a href="gen/CatParser.ExprRangeContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprRange</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></span>&#8203;(<a href="gen/CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">visitExprToid</a></span>&#8203;(<a href="gen/CatParser.ExprToidContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprToidContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
-<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
+<div class="block">Visit a parse tree produced by the <code>exprToid</code>
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
@@ -335,13 +335,28 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">visitExprTryWith</a></span>&#8203;(<a href="gen/CatParser.ExprTryWithContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTryWithContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by the <code>exprTryWith</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitExprUnion(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprUnionContext)">visitExprUnion</a></span>&#8203;(<a href="gen/CatParser.ExprUnionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprUnionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by the <code>exprUnion</code>
  labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">visitFunctionDef</a></span>&#8203;(<a href="gen/CatParser.FunctionDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.FunctionDefContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#functionDef()"><code>CatParser.functionDef()</code></a>.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitIrreflexiveDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.IrreflexiveDefinitionContext)">visitIrreflexiveDefinition</a></span>&#8203;(<a href="gen/CatParser.IrreflexiveDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.IrreflexiveDefinitionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
@@ -349,25 +364,32 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
  labeled alternative in <a href="gen/CatParser.html#axiomDefinition()"><code>CatParser.axiomDefinition()</code></a>.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></span>&#8203;(<a href="gen/CatParser.LetDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetDefinitionContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#letDefinition()"><code>CatParser.letDefinition()</code></a>.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></span>&#8203;(<a href="gen/CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</code></th>
-<td class="colLast">
-<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.</div>
-</td>
-</tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitMcm(hu.bme.mit.theta.cat.dsl.gen.CatParser.McmContext)">visitMcm</a></span>&#8203;(<a href="gen/CatParser.McmContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.McmContext</a>&nbsp;ctx)</code></th>
 <td class="colLast">
 <div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#mcm()"><code>CatParser.mcm()</code></a>.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">visitProcCall</a></span>&#8203;(<a href="gen/CatParser.ProcCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcCallContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#procCall()"><code>CatParser.procCall()</code></a>.</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">visitProcDef</a></span>&#8203;(<a href="gen/CatParser.ProcDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcDefContext</a>&nbsp;ctx)</code></th>
+<td class="colLast">
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#procDef()"><code>CatParser.procDef()</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -376,7 +398,7 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;hu.bme.mit.theta.cat.dsl.gen.<a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a></h3>
-<code><a href="gen/CatBaseVisitor.html#visitDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.DefinitionContext)">visitDefinition</a>, <a href="gen/CatBaseVisitor.html#visitLetRecAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecAndDefinitionContext)">visitLetRecAndDefinition</a></code></li>
+<code><a href="gen/CatBaseVisitor.html#visitDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.DefinitionContext)">visitDefinition</a>, <a href="gen/CatBaseVisitor.html#visitExprNull(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprNullContext)">visitExprNull</a>, <a href="gen/CatBaseVisitor.html#visitLetAndDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetAndDefinitionContext)">visitLetAndDefinition</a>, <a href="gen/CatBaseVisitor.html#visitScopeBody(hu.bme.mit.theta.cat.dsl.gen.CatParser.ScopeBodyContext)">visitScopeBody</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.org.antlr.v4.runtime.tree.AbstractParseTreeVisitor">
@@ -542,6 +564,203 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 </dl>
 </li>
 </ul>
+<a id="visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitFunctionDef</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitFunctionDef&#8203;(<a href="gen/CatParser.FunctionDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.FunctionDefContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#functionDef()"><code>CatParser.functionDef()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">visitFunctionDef</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitFunctionDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.FunctionDefContext)">visitFunctionDef</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitProcDef</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitProcDef&#8203;(<a href="gen/CatParser.ProcDefContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcDefContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#procDef()"><code>CatParser.procDef()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">visitProcDef</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitProcDef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcDefContext)">visitProcDef</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprToid</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprToid&#8203;(<a href="gen/CatParser.ExprToidContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprToidContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by the <code>exprToid</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">visitExprToid</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitExprToid(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprToidContext)">visitExprToid</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprRange</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprRange&#8203;(<a href="gen/CatParser.ExprRangeContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by the <code>exprRange</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">visitExprRange</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitExprRange(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeContext)">visitExprRange</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprDomain</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprDomain&#8203;(<a href="gen/CatParser.ExprDomainContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by the <code>exprDomain</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">visitExprDomain</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitExprDomain(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainContext)">visitExprDomain</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitProcCall</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitProcCall&#8203;(<a href="gen/CatParser.ProcCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ProcCallContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#procCall()"><code>CatParser.procCall()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">visitProcCall</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitProcCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ProcCallContext)">visitProcCall</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprTryWith</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprTryWith&#8203;(<a href="gen/CatParser.ExprTryWithContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprTryWithContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by the <code>exprTryWith</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">visitExprTryWith</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitExprTryWith(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTryWithContext)">visitExprTryWith</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
+<a id="visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitExprFunctionCall</h4>
+<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprFunctionCall&#8203;(<a href="gen/CatParser.ExprFunctionCallContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFunctionCallContext</a>&nbsp;ctx)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">CatBaseVisitor</a></code></span></div>
+<div class="block">Visit a parse tree produced by the <code>exprFunctionCall</code>
+ labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
+
+ <p>The default implementation returns the result of calling
+ <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="gen/CatVisitor.html#visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">visitExprFunctionCall</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="gen/CatBaseVisitor.html#visitExprFunctionCall(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFunctionCallContext)">visitExprFunctionCall</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the visitor result</dd>
+</dl>
+</li>
+</ul>
 <a id="visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">
 <!--   -->
 </a>
@@ -559,30 +778,6 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 <dd><code><a href="gen/CatVisitor.html#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="gen/CatBaseVisitor.html#visitLetDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetDefinitionContext)">visitLetDefinition</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitLetRecDefinition</h4>
-<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitLetRecDefinition&#8203;(<a href="gen/CatParser.LetRecDefinitionContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.LetRecDefinitionContext</a>&nbsp;ctx)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">CatBaseVisitor</a></code></span></div>
-<div class="block">Visit a parse tree produced by <a href="gen/CatParser.html#letRecDefinition()"><code>CatParser.letRecDefinition()</code></a>.
-
- <p>The default implementation returns the result of calling
- <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="gen/CatVisitor.html#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="gen/CatBaseVisitor.html#visitLetRecDefinition(hu.bme.mit.theta.cat.dsl.gen.CatParser.LetRecDefinitionContext)">visitLetRecDefinition</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -608,31 +803,6 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 <dd><code><a href="gen/CatVisitor.html#visitExprCartesian(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCartesianContext)">visitExprCartesian</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="gen/CatBaseVisitor.html#visitExprCartesian(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprCartesianContext)">visitExprCartesian</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprRangeIdentity</h4>
-<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprRangeIdentity&#8203;(<a href="gen/CatParser.ExprRangeIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprRangeIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">CatBaseVisitor</a></code></span></div>
-<div class="block">Visit a parse tree produced by the <code>exprRangeIdentity</code>
- labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
-
- <p>The default implementation returns the result of calling
- <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="gen/CatVisitor.html#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="gen/CatBaseVisitor.html#visitExprRangeIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprRangeIdentityContext)">visitExprRangeIdentity</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -840,56 +1010,6 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 </dl>
 </li>
 </ul>
-<a id="visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprDomainIdentity</h4>
-<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprDomainIdentity&#8203;(<a href="gen/CatParser.ExprDomainIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprDomainIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">CatBaseVisitor</a></code></span></div>
-<div class="block">Visit a parse tree produced by the <code>exprDomainIdentity</code>
- labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
-
- <p>The default implementation returns the result of calling
- <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="gen/CatVisitor.html#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="gen/CatBaseVisitor.html#visitExprDomainIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprDomainIdentityContext)">visitExprDomainIdentity</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprIdentity</h4>
-<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprIdentity&#8203;(<a href="gen/CatParser.ExprIdentityContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprIdentityContext</a>&nbsp;ctx)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">CatBaseVisitor</a></code></span></div>
-<div class="block">Visit a parse tree produced by the <code>exprIdentity</code>
- labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
-
- <p>The default implementation returns the result of calling
- <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="gen/CatVisitor.html#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="gen/CatBaseVisitor.html#visitExprIdentity(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprIdentityContext)">visitExprIdentity</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
 <a id="visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">
 <!--   -->
 </a>
@@ -908,31 +1028,6 @@ extends <a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.d
 <dd><code><a href="gen/CatVisitor.html#visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">visitExprTransRef</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="gen/CatBaseVisitor.html#visitExprTransRef(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprTransRefContext)">visitExprTransRef</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ctx</code> - the parse tree</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the visitor result</dd>
-</dl>
-</li>
-</ul>
-<a id="visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitExprFencerel</h4>
-<pre class="methodSignature">public&nbsp;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&nbsp;visitExprFencerel&#8203;(<a href="gen/CatParser.ExprFencerelContext.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatParser.ExprFencerelContext</a>&nbsp;ctx)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="gen/CatBaseVisitor.html#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">CatBaseVisitor</a></code></span></div>
-<div class="block">Visit a parse tree produced by the <code>exprFencerel</code>
- labeled alternative in <a href="gen/CatParser.html#expression()"><code>CatParser.expression()</code></a>.
-
- <p>The default implementation returns the result of calling
- <code>AbstractParseTreeVisitor.visitChildren(org.antlr.v4.runtime.tree.RuleNode)</code> on <code>ctx</code>.</p></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="gen/CatVisitor.html#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></code>&nbsp;in interface&nbsp;<code><a href="gen/CatVisitor.html" title="interface in hu.bme.mit.theta.cat.dsl.gen">CatVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="gen/CatBaseVisitor.html#visitExprFencerel(hu.bme.mit.theta.cat.dsl.gen.CatParser.ExprFencerelContext)">visitExprFencerel</a></code>&nbsp;in class&nbsp;<code><a href="gen/CatBaseVisitor.html" title="class in hu.bme.mit.theta.cat.dsl.gen">CatBaseVisitor</a>&lt;<a href="../mcm/MCMRelation.html" title="class in hu.bme.mit.theta.cat.mcm">MCMRelation</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
