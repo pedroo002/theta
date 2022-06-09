@@ -534,3 +534,28 @@ To show how these techniques can be tailored to a tool in practice, I realized t
 For evaluation, a subset of the benchmarking tasks of the International Competition on Software Verification (SV-COMP) is used. SV-COMP is widely regarded as a de-facto standard benchmark set of C program verification tasks. The recommended improvements were compared to several generally well-performing configurations, executed one at a time and in a naive sequential portfolio as well. The tool with the improvements proposed in this thesis proved capable of solving more tasks significantly faster than those in the baseline configurations.
 To summarize, I designed approaches for efficient verification by automating some of the configuration and algorithm selection tasks requiring expert knowledge. The approaches are general and applicable in any verification framework. To evaluate them, I realized these techniques in a specific verifier framework, showing how it can improve the tool's performance.},
 }
+
+@misc{bajczilMsc2022,
+    author = {Bajczi, Levente},
+    title = {Handling axiomatic memory models in abstraction-based model checking of concurrent and distributed systems},
+    note = {Master's Thesis, Budapest University of Technology and Economics},
+    year = {2022},
+    type = {Thesis},
+    url_pdf = {bajczilMsc2022.pdf},    
+    abstract = {Formal verification of hardware-software critical systems is a necessity for an increasing number of applications. We trust the lives of people on the safety of computer software, and we have to be absolutely certain they will never fail. One of the problems state-of-the-art verification tools struggle with is weakly ordered models of communication, both in the case of shared memory concurrency and distributed systems. The seemingly arbitrary reordering of accesses makes the state space unmanageably large for conventional approaches. In this thesis, I survey the landscape of verification tools capable of performantly handling parallelism, both in the case of sequential consistency as well as weak memory ordering (1). I implement one of the best approaches in the verification framework Theta, a tool maintained by the Critical Systems Research Group (2). Furthermore, I propose a novel approach for handling practically infinite-state inputs for the weakly ordered memory models, and I create a proof-of-concept implementation of the main parts of the algorithm (3). Finally, I apply the memory modeling principles to message-based communication protocols, thereby widening the applicability of the algorithms and approaches shown before (4).},
+}
+
+@incollection{tacas2022,
+    author="{\'A}d{\'a}m, Zs{\'o}fia and Bajczi, Levente and Dobos-Kov{\'a}cs, Mih{\'a}ly and Hajdu, {\'A}kos and Moln{\'a}r, Vince",
+    editor="Fisman, Dana and Rosu, Grigore",
+    title="Theta: portfolio of CEGAR-based analyses with dynamic algorithm selection (Competition Contribution)",
+    booktitle="Tools and Algorithms for the Construction and Analysis of Systems",
+    year="2022",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="474--478",
+    abstract="Theta is a model checking framework based on abstraction refinement algorithms. In SV-COMP 2022, we introduce: 1) reasoning at the source-level via a direct translation from C programs; 2) support for concurrent programs with interleaving semantics; 3) mitigation for non-progressing refinement loops; 4) support for SMT-LIB-compliant solvers. We combine all of the aforementioned techniques into a portfolio with dynamic algorithm selection.",
+    isbn="978-3-030-99527-0",
+    url_pdf    = {tacas2022.pdf},
+    type       = {Conference},
+}
