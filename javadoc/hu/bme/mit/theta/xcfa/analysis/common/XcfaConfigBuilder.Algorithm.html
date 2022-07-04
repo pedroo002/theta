@@ -110,8 +110,10 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code><a href="#INTERLEAVINGS" class="member-name-link">INTERLEAVINGS</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#SINGLETHREAD" class="member-name-link">SINGLETHREAD</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#INTERLEAVINGS_POR" class="member-name-link">INTERLEAVINGS_POR</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code><a href="#SINGLETHREAD" class="member-name-link">SINGLETHREAD</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -138,7 +140,7 @@ P extends <a href="../../../analysis/Prec.html" title="interface in hu.bme.mit.t
  <a href="../../../analysis/InitFunc.html" title="interface in hu.bme.mit.theta.analysis">InitFunc</a>&lt;S,<wbr>P&gt;&nbsp;initFunc)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../../analysis/LTS.html" title="interface in hu.bme.mit.theta.analysis">LTS</a>&lt;? extends <a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaState</a>&lt;?&gt;,<wbr>? extends <a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaAction</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLts()" class="member-name-link">getLts</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getLts(hu.bme.mit.theta.xcfa.model.XCFA)" class="member-name-link">getLts</a><wbr>(<a href="../../model/XCFA.html" title="class in hu.bme.mit.theta.xcfa.model">XCFA</a>&nbsp;xcfa)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract &lt;S extends <a href="../../../analysis/expr/ExprState.html" title="interface in hu.bme.mit.theta.analysis.expr">ExprState</a>&gt;<br><a href="../../../analysis/PartialOrd.html" title="interface in hu.bme.mit.theta.analysis">PartialOrd</a>&lt;<a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaState</a>&lt;S&gt;&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPartialOrder(hu.bme.mit.theta.analysis.PartialOrd)" class="member-name-link">getPartialOrder</a><wbr>(<a href="../../../analysis/PartialOrd.html" title="interface in hu.bme.mit.theta.analysis">PartialOrd</a>&lt;S&gt;&nbsp;partialOrd)</code></div>
@@ -195,6 +197,12 @@ the order they are declared.</div>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="XcfaConfigBuilder.Algorithm.html" title="enum class in hu.bme.mit.theta.xcfa.analysis.common">XcfaConfigBuilder.Algorithm</a></span>&nbsp;<span class="element-name">INTERLEAVINGS</span></div>
 </section>
 </li>
+<li>
+<section class="detail" id="INTERLEAVINGS_POR">
+<h3>INTERLEAVINGS_POR</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="XcfaConfigBuilder.Algorithm.html" title="enum class in hu.bme.mit.theta.xcfa.analysis.common">XcfaConfigBuilder.Algorithm</a></span>&nbsp;<span class="element-name">INTERLEAVINGS_POR</span></div>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -235,9 +243,9 @@ not permitted.)</div>
 </section>
 </li>
 <li>
-<section class="detail" id="getLts()">
+<section class="detail" id="getLts(hu.bme.mit.theta.xcfa.model.XCFA)">
 <h3>getLts</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="../../../analysis/LTS.html" title="interface in hu.bme.mit.theta.analysis">LTS</a>&lt;? extends <a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaState</a>&lt;?&gt;,<wbr>? extends <a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaAction</a>&gt;</span>&nbsp;<span class="element-name">getLts</span>()</div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="../../../analysis/LTS.html" title="interface in hu.bme.mit.theta.analysis">LTS</a>&lt;? extends <a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaState</a>&lt;?&gt;,<wbr>? extends <a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.common">XcfaAction</a>&gt;</span>&nbsp;<span class="element-name">getLts</span><wbr><span class="parameters">(<a href="../../model/XCFA.html" title="class in hu.bme.mit.theta.xcfa.model">XCFA</a>&nbsp;xcfa)</span></div>
 </section>
 </li>
 <li>

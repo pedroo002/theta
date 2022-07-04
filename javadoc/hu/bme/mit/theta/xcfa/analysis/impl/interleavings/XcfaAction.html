@@ -99,9 +99,8 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected </code></div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Integer,hu.bme.mit.theta.xcfa.model.XcfaLocation,hu.bme.mit.theta.xcfa.model.XcfaLocation,java.util.List)" class="member-name-link">XcfaAction</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;process,
- <a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a>&nbsp;source,
- <a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a>&nbsp;target,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.Integer,hu.bme.mit.theta.xcfa.model.XcfaEdge,java.util.List)" class="member-name-link">XcfaAction</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;process,
+ <a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a>&nbsp;edge,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;&nbsp;labels)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
@@ -122,30 +121,33 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#create(java.lang.Integer,hu.bme.mit.theta.xcfa.model.XcfaEdge)" class="member-name-link">create</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;process,
  <a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a>&nbsp;edge)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLabels()" class="member-name-link">getLabels</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getEdge()" class="member-name-link">getEdge</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProcess()" class="member-name-link">getProcess</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getLabels()" class="member-name-link">getLabels</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource()" class="member-name-link">getSource</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getProcess()" class="member-name-link">getProcess</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../../core/stmt/Stmt.html" title="interface in hu.bme.mit.theta.core.stmt">Stmt</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStmts()" class="member-name-link">getStmts</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSource()" class="member-name-link">getSource</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTarget()" class="member-name-link">getTarget</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../../core/stmt/Stmt.html" title="interface in hu.bme.mit.theta.core.stmt">Stmt</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getStmts()" class="member-name-link">getStmts</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTarget()" class="member-name-link">getTarget</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touchesGlobal()" class="member-name-link">touchesGlobal</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withLabels(java.util.List)" class="member-name-link">withLabels</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;&nbsp;stmts)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#touchesGlobal()" class="member-name-link">touchesGlobal</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#withLabels(java.util.List)" class="member-name-link">withLabels</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;&nbsp;stmts)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -170,11 +172,10 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.Integer,hu.bme.mit.theta.xcfa.model.XcfaLocation,hu.bme.mit.theta.xcfa.model.XcfaLocation,java.util.List)">
+<section class="detail" id="&lt;init&gt;(java.lang.Integer,hu.bme.mit.theta.xcfa.model.XcfaEdge,java.util.List)">
 <h3>XcfaAction</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="element-name">XcfaAction</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;process,
- <a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a>&nbsp;source,
- <a href="../../../model/XcfaLocation.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLocation</a>&nbsp;target,
+ <a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a>&nbsp;edge,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../model/XcfaLabel.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaLabel</a>&gt;&nbsp;labels)</span></div>
 </section>
 </li>
@@ -191,6 +192,12 @@ loadScripts(document, 'script');</script>
 <h3>create</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a></span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&nbsp;process,
  <a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a>&nbsp;edge)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="getEdge()">
+<h3>getEdge</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../../../model/XcfaEdge.html" title="class in hu.bme.mit.theta.xcfa.model">XcfaEdge</a></span>&nbsp;<span class="element-name">getEdge</span>()</div>
 </section>
 </li>
 <li>

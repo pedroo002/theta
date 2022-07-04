@@ -113,7 +113,7 @@ implements <a href="../../../../analysis/LTS.html" title="interface in hu.bme.mi
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getEnabledActionsFor(hu.bme.mit.theta.xcfa.analysis.impl.interleavings.XcfaState)" class="member-name-link">getEnabledActionsFor</a><wbr>(<a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaState</a>&lt;?&gt;&nbsp;state)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets the enabled actions for a given state.</div>
+<div class="block">Returns the enabled actions in the ARG from the given state.</div>
 </div>
 </div>
 </div>
@@ -150,12 +150,14 @@ implements <a href="../../../../analysis/LTS.html" title="interface in hu.bme.mi
 <section class="detail" id="getEnabledActionsFor(hu.bme.mit.theta.xcfa.analysis.impl.interleavings.XcfaState)">
 <h3>getEnabledActionsFor</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a>&gt;</span>&nbsp;<span class="element-name">getEnabledActionsFor</span><wbr><span class="parameters">(<a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaState</a>&lt;?&gt;&nbsp;state)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../../../../analysis/LTS.html#getEnabledActionsFor(S)">LTS</a></code></span></div>
-<div class="block">Gets the enabled actions for a given state.</div>
+<div class="block">Returns the enabled actions in the ARG from the given state.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../../../../analysis/LTS.html#getEnabledActionsFor(S)">getEnabledActionsFor</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../analysis/LTS.html" title="interface in hu.bme.mit.theta.analysis">LTS</a>&lt;<a href="XcfaState.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaState</a>&lt;?&gt;,<wbr><a href="XcfaAction.html" title="class in hu.bme.mit.theta.xcfa.analysis.impl.interleavings">XcfaAction</a>&gt;</code></dd>
+<dt>Parameters:</dt>
+<dd><code>state</code> - the state whose enabled actions we would like to know</dd>
 <dt>Returns:</dt>
+<dd>the enabled actions</dd>
 </dl>
 </section>
 </li>
