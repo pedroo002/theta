@@ -6,6 +6,7 @@ include(
         "common/core",
 
         "frontends/c-frontend",
+        "frontends/gamma-frontend",
 
         "cfa/cfa",
         "cfa/cfa-analysis",
